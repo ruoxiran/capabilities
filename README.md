@@ -1,13 +1,5 @@
+# Capabilities of Overlay Applications in Web Accessibility
 
-# MyNote
+This is the repository for *Capabilities of Overlay Applications in Web Accessibility*, maintained by the [Accessibility at the Edge (A11yEdge) Community Group](https://www.w3.org/community/a11yedge/).
 
-This is the repository for MyNote.
-
-## Remove everything from this line when you're done
-
-Please update the following files:
-
-* w3c.json : make sure group ID and contacts are correct
-* index.html : update the respec config as needed
-* README.md : remove these instructions and update as needed
-* .travis.yml : for automatic publishing, you'll need the [proper group decision email](https://github.com/w3c/echidna/wiki/How-to-use-Echidna-with-ReSpec-and-GitHub#working-group-approval) and you'll need to [secure your TOKEN](https://github.com/w3c/echidna/wiki/How-to-use-Echidna-with-ReSpec-and-GitHub#working-group-approval)
+Contributions are welcome, including new GitHub issues or pull requests.
