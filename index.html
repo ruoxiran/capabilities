@@ -281,18 +281,27 @@ Clearly, such a form-based reporting mechanism can be in source content. It is a
  
 </section>
 <section id="profile-userint">
-<h3>Profile enabling a bundle of user-triggered interactions/opt-ins (on a
-site)</h3>
+<h3>Feature-Bundling Profiles</h3>
 
-<p>Optional profiles that group
-interactive features together into bundles, making it easier to turn on groups
+<p>Site publishers need to support the full spectrum of accessibility features. On the other hand individual users need certain features and will ignore those they do not need. The types of features individual users need are  often groupable
+into bundles, making it easier to turn on groups
 of features, e.g. high contrast and larger text size.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. </dd>
-</dl>
 
+<dl>
+<dt>Source</dt>
+<dd>
+As previously noted, users will need the same (or very similar) feature support across all their various devices. This makes supporting even grouped feature profiles in source (and even in the OS) less effective than an edge solution could be, because it requires the user to make the same selections time and again.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	Grouping related features together into named profiles enables users to find and focus on the ones they need to configure and ignore the rest. The emerging approach aimed at propogating user profile configurations across all of a user&apos;s devices makes edge technology the only logical locus for this capability.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	This is yet another instance of <q>Configure Once, Deploy Everywhere</q>.
+</dd>
+</dl>
+ 
 </section>
 <section id="a11yedit">
 <h3>Accessibility editing, by site owner</h3>
