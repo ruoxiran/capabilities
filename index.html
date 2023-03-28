@@ -3,8 +3,8 @@
 
 <head>
 <meta http-equiv=Content-Type content="text/html; charset=utf-8">
-<title>Overlay Capabilities Inventory, Accessibility at the Edge Community
-Group</title>
+<title>Overlay Capabilities Inventory
+</title>
 
 <style>
 </style>
@@ -14,10 +14,10 @@ Group</title>
 </head>
 
 <body>
-	<a href=https://www.w3.org/><img alt=W3C height=48 src=https://www.w3.org/Icons/w3c_home width=72></a>
+	<a href="https://www.w3.org/"><img alt="W3C" height="48" src="https://www.w3.org/Icons/w3c_home" width="72"></a>
 	 
 	<section class="title notoc">
-<h2><b>Overlay Capabilities Inventory</b></h2>
+<h1><b>Overlay Capabilities Inventory</b></h1>
 
 
 	</section>
@@ -44,16 +44,19 @@ Group</title>
 
 <li>Related topics</li>
 </ul>
-<p><strong>EDITOR&apos;S NOTE</strong><br /> The <q>Related Items</q> list item is a placeholder to remind us that this document is in active development. Suggestions welcome!</p>
+<p><strong>EDITOR&apos;S NOTE</strong><br /> The <q>Related Topics</q> list item is a placeholder to remind us that this document is in active development. Suggestions welcome!</p>
 		</section>
 
-<section id="capinv">
-<h2>Capabilities Inventory</h2>
+<section id="usrneeds">
+<h1>Meeting Users&apos; Needs</h1>
+
+<section id="uxproc">
+	<h2>Creating Accessible U-X</h2>
 
 <section id="usertrig">
-<h3>User-triggered interactions/opt-ins</h3>
+<h3>User-triggered Transformations</h3>
 
-<p>User opt-ins via interactive personalization menus: The end-user can access a list of available enhancements and enable those they require. </p>
+<p>User can be afforded  the opportunity to opt-in to various transformations via interactive personalization menus: The end-user can access a list of available enhancements and enable those they require. </p>
 
 <dl>
 <dt>Source</dt>
@@ -63,16 +66,15 @@ Group</title>
 <dd>Many of the capabilities made available by user-triggered opt-ins are often also found in multiple places at the edge. For example, contrast adjustment is generally found  in operating system display settings, in browser and app user-agents (e.g. dark mode/light mode), and in browser extensions, and in javascripted (CDN hosted) overlays. Such redundancy can easily lead to confusion. This confusion may be further exacerbated because certain settings the user finds helpful may be available only in one of these locations, and not in all of them. Furthermore, users are frequently not particularly knowledgeable about their operating system settings menus, especially as these tend to move with each OS revision (to take one example). This can make it difficult to locate these features, especially when we recognize that once satisfactorily configured they are generally not reset (meaning that the user doesn't need to revisit that menu location and soon forgets where it is). On the other hand, locating the accommodation consistently proximate to the user offers the highest likelihood of maximal benefit provided  the accommodation  is easily identified and invoked without conflicts. This also provides the best opportunity for easing the burden of invoking the same accommodation across a user&apos;s multiple devices.</dd>
 
 <dt>Benefit</dt>
-<dd>Users can select and optimally tune the types of accomodations that they require. Any device on the edge may also have knowledge of other devices on the edge, that may need the same adjustments, and the edge could propagate these settings to those other devices. MacOS Ventura (MacOS 13.2) is already doing this for wifi passwords when an IOS device configured for the same network is proximate.</dd>
+<dd>Users can select and optimally tune the types of accomodations that they require. Any device on the edge may also have knowledge of other devices on the edge, that may need the same adjustments, and edge technology could propagate these settings to those other devices. MacOS Ventura (MacOS 13.2) is already doing this for wifi passwords when an IOS device configured for the same network is proximate.</dd>
 </dl>
 
 </section>
-<section id="autobgproc">
-<h3>Automated Background U-X Processing, no user action invoked</h3>
 
-<p>Users will not care how a functional and accessible experience is assembled as long as their needs are met. However, they are, and must always be understood as the ultimate arbiters of whether their needs are actually being met.
-Consequently,
-U-X processing should be easily discoverable and defeatable. Users need to be empowered to act should they believe an unmediated experience would be superior. Preserving user agency is simply smart business strategy no matter how excellent the the technology may actually be.
+<section id="autobgproc">
+<h3>Fully Automated Background U-X Transformations</h3>
+
+	<p>Sometimes automated transformations are applied based on conditions edge technology discovers in the user&apos;s technology.
 </p>
 
 <dl>
@@ -81,35 +83,64 @@ U-X processing should be easily discoverable and defeatable. Users need to be em
 </dd>
 
 <dt>Trade-offs</dt> 
-<dd><q>Nothing about us without us</q> is a deeply held
-	principle in disability advocacy. While a well-crafted remediation
+<dd>While a well-crafted remediation
 	technology may disappear from users&apos; consciousness, it is both
-risky and presumptuous to assume there will be no users who who will not
-experience some kind of accessibility challenge even among the best crafted remediation technologies. For this reason alone it is
-important to preserve user agency by offering a defeat option. Nothing is
-gained when users are forced to contend with a remediation technology they
-suspect may be contributing to their accessibility challenges, even if the
-ultimate reality demonstrates that their suspicion is actually incorrect.
+risky and presumptuous to presume there will be no users who will not
+experience some kind of accessibility challenge even among the best crafted remediation technologies.
 Furthermore, persons with disabilities tend to be  concerned about content
 providers discovering and monetizing  user data. Their lived reality has made
 them highly desirous to preserve their privacy because of perceived and actual
 experience of discrimination over many years.
-	
-	<p><strong>EDITOR&apos;S NOTE</strong><br /> This needs more work.</p>
-	However, the approach provides clear benefits especially in real-time applications such as <a href="https://www.w3.org/TR/raur/">Real Time Communications (RTC)</a>. 
+	However, the automated U-X transformation approach can provide clear benefits. One example is  real-time applications such as <a href="https://www.w3.org/TR/raur/">Real Time Communications (RTC)</a>. 
 	Immediacy matters. ASR captions may not provide the desired quality, but the alternative may too often be no captions whatsoever. 
 	Similarly missing image descriptions generated by A-I may prove more helpful to the user coping with a substandard page than no alternative text at all. 
-	Not only does the continued presence of unremediated content provide user substandard access, it also does not provide A-I engines corrective feedback that could train them to do better in future.</p>
-	<p>
-	Pages whose content remains unremediated however, can tend to encourage users to seek alternative source providers. 
-	There's also an unrealized opportunity for crowd-sourced correctives to help train smarter A-I generated output, though burden-shifting does encumber this potential use.</p>
+	Pages whose content remains unremediated can also tend to encourage users to seek alternative providers. 
 	</dd>
 
 <dt>Benefit</dt>
-<dd>Users do indeed expect their technologies will operate automatically and seamlessly to provide an accessible and functional experience. This is an accepted technological expectation. Content providers do not err in attempting to meet this expectation. The error arises from leaving the user out of the decision loop. Also, technologically mediated privacy preservation is only feasible in edge technologies, though it can be subverted even there.</dd>
+<dd>Users do indeed expect their technologies will operate automatically and seamlessly to provide an accessible and functional experience. This is an accepted technological expectation. Content providers do not err in attempting to meet this expectation. The error arises from leaving the user out of the decision loop.</dd>
+
+<dt>Related Topics</dt>
+<dd>
+	This capability is in direct conflict with <a href="usrctrl">Preserving User Agency</a> below.
+</dd>
+
 </dl>
 </section>
 
+<section id="usrctrl">
+<h3>Preserving User Agency</h3>
+
+<p>Users will not care how a functional and accessible experience is assembled as long as their needs are met. However, they are, and must always be understood as the ultimate arbiters of whether their needs are actually being met.
+Consequently,
+U-X processing should be easily discoverable and defeatable. Users need to be empowered to act should they believe an unmediated experience would be superior. Preserving user agency is simply smart business strategy no matter how excellent the the technology may actually be.
+</p>
+
+<dl>
+<dt>Source</dt>
+<dd>Content providers can, and often do provide various levels of content transformation opportunities to users.
+</dd>
+
+<dt>Trade-offs</dt> 
+<dd><q>Nothing about us without us</q> is a deeply held
+	principle expressing a core criterion of disability equity. For this reason alone it is
+important to preserve user agency by offering a defeat option. Nothing is
+gained when users are forced to contend with a remediation technology they
+suspect may be contributing to their accessibility challenges, even if the
+ultimate reality demonstrates that their suspicion is actually incorrect.
+	</dd>
+
+<dt>Benefit</dt>
+<dd>A core user perogative is honored.</dd>
+
+<dt>Related Topics</dt>
+<dd>
+	This capability is in direct conflict with <a href="autobgproc">Fully Automated Background U-X Transformations</a> above. Preserving user agency is so critical that we call it out separately as a critical capability for edge technologies. Too often it is the only feature missing from a <a href="autobgproc">Fully Automated Background U-X Transformations</a> capability.
+</dd>
+ 
+</dl>
+</section>
+</section>
 <section id="portable">
 <h3>Portable cross-site profile expressing accessibility-oriented preferences</h3>
 
@@ -135,38 +166,14 @@ experience of discrimination over many years.
 
 <dt>Benefit</dt>
 <dd>Configure once and deploy everywhere, with the setting propagating to other contexts.</dd>
-</dl>
-
-</section>
-<section id="autoWCAG">
-<h3>Automated Detection of WCAG Violations</h3>
-
-<p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
-	Large, complex and highly dynamic source sites are literally unable to reproduce every user experience permutation in their test beds. Automated detection and 
-	reporting can bridge this gap. 
-	There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here..</p>
-<dl>
-<dt>Source</dt>
+<dt>Related Topics</dt>
 <dd>
-If source got this right (as WCAG 2.x seems to expect), we wouldn't have a need for this capability.
+While this capability remains aspirational in the main as of this writing, it is nevertheless an achievable goal for which edge technology is optimally suited. Many other capabilities enumerated in this document will point to this capability as an optimal implementation objective.
 </dd>
-<dt>Trade-offs</dt>
-<dd> In-browser scanners and online scanners are used to detect WCAG violations. 
-	This is the business model for many companies. 
-	False positives, false negatives, certainty and confidence scores are well-known factors affecting the success and usefulness of this approach. 
-	It is unfortunate when such violations remain unremediated in source content, but sometimes this can&apos;t be helped. 
-	An indication of violations at the edge, however rough, is better than none.
-
-<dt>Benefit</dt>
-<dd>
-	Automated detection is useful in-and-of-itself. 
-	Something is most often better than nothing, especially in the moment. 
-	It looms ever larger as it stacks, and automated detection is often the first step in a chain of capabilities.
 </dl>
 
-
-
 </section>
+
 <section id="notify">
 <h3>Notifications</h3>
 
@@ -189,97 +196,7 @@ On the other hand it seems equally unlikely that edge technology alone can fully
 </dl>
 
 </section>
-<section id="HIT">
-<h3>Human Mediated vs Fully automated remediation</h3>
 
-<p>While not the glamorous <q>holy grail</q> of technology deployment today, human mediation of A-I identified checkpoints, together with the site owner&apos;s active participation to clarify meaning and intent describes the most effective approach available today to accomplish accessibility remediations where they're needed. No other approach delivers equally effective remediations.
-</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	This is a process approach just as meaningful for remediating accessibility violations in source as it is for creating in-process remediations.
-</dd>
-<dt>Tradeoffs</dt>
-<dd>
-	It is clearly preferable to remediate violations in source content whenever doing so is feasible. An in-process corrective overlay remediations only make sense when there are good reasons why the source cannot be remediated. To argue any form of <q>should</q> concerning where a remediation is accomplished actually describes a theology of accessibility, not a technological solution delivering real benefits to users.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	The user always benefits when best available remediation approaches are employed. Nor will the user ever care where and how the remediation is accomplished as long as it facilitates the user&apos; s ability to function.
-</dd>
-</dl>
- 
-
-</section>
-<section id="a11ystmnt">
-<h3>Accessibility Statement</h3>
-
-<p>Providing an easily located Accessibility Statement has become a widely accepted best practice in the industry. While there is no consensus on what all should be included, it is generally agreed that the formal Statement should define the site&apos;s commitment to accessibility of its content and services. Additional content, such as accessibility specific contact data, and accessibility specific help resources are also frequently colocated.
-</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	It is best practice to link to the Accessibility Statement (and related resources) from the site's footer.
-</dd>
-<dt>Tradeoffs</dt>
-<dd>
-	An Accessibility Statement introduced by edge technologies doesn&apos;t add value, though adding locale specific content might be useful.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	To the extent that locale specific data may be helpful to users, edge technology may be the best means of providing the most timely locale-specific accessibility information.
-</dd>
-</dl>
-
-</section>
-<section id="a11yprov">
-<h3>Identify the Accessibility provider</h3>
-
-<p>Display to website users the name
-(and perhaps the logo) of the primary accessibility provider, who stands behind the accessibility of
-the site. This may be part of the accessibility
-statement.</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	Identifying the provider of accessibility to site source is a matter of transparency and will likely be gladly accomplished by any provider taking pride in the quality of their output.
-</dd>
-<dt>Tradeoffs</dt>
-<dd>
-	Providing accessibility to content, whether at the source or with in-process transformations, should never be opaque. Users deserve to know who is responsible for their experience of web content.
-</dd>
-<dt>Benefit</dt>
-<dd>
-</dd>
-</dl>
-
-</section>
-
-<section id="reporting">
-<h3>Accessibility issue reporting</h3>
-
-<p>A form, or email link, enabling
-end-users to report barriers they&apos;ve experienced to accessibility to the website owner is an industry best practice.</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-Clearly, such a form-based reporting mechanism can be in source content. It is another feature that would likely be best provided along with the Accessibility Statement and related resources.
-</dd>
-<dt>Tradeoffs</dt>
-<dd>
-	While not obviating source based issue reporting, edge technologies are uniquely positioned to attach possibly relevant metadata to such reports.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	Such a form requires the source provider to think through who should receive and process these reports. Most particularly, they will need to consider what accessibility expertise is available to evaluate and follow-up on such reports.
-</dd>
-</dl>
- 
-</section>
 <section id="profile-userint">
 <h3>Feature-Bundling Profiles</h3>
 
@@ -303,40 +220,10 @@ As previously noted, users will need the same (or very similar) feature support 
 </dl>
  
 </section>
-<section id="a11yedit">
-<h3>Accessibility editing, by site owner</h3>
 
-<p>An interface in the overlay,
-available to authorized users, enabling manual editing of code that affects
-accessibility, e.g. alt tags for images, or ARIA labels.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. Provides an alternative to standard methods of
-coding the site, either via source code, web platform templates/CSS
-adjustments, etc.</dd>
+<section id="txtrans">
+	<h2>Text Transformations</h2>
 
-<dt>Related Topics:</dt>
-<dd> This editing needs to be done
-by people with expertise. Can be a source of information for a subject matter
-expert.</dd>
-</dl>
-
-</section>
-<section id="a11yedit3rd">
-<h3>Accessibility editing, by 3rd party</h3>
-
-<p>A third party, via the overlay,
-codes the accessibility of the site.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. Without an overlay, this could be an
-outsourced remediation team that has login authorization to the source code
-and/or admin of the CMS/Platform.</dd>
-</dl>
-
-</section>
 <section id="textsize">
 <h3>Change Text Size</h3>
 
@@ -435,19 +322,8 @@ the operating system itself. Thus edge support needs a compelling reason to dive
 </dl>
 
 </section>
-<section id="tooltip">
-<h3>Tooltips</h3>
 
-<p>small pop-up window that appears
-on hover to display additional information about an element on the page,
-providing context or clarification.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type.</dd>
-</dl>
 
-</section>
 <section id="readingguide">
 <h3>Reading Guide</h3>
 
@@ -577,6 +453,235 @@ legacy codebases where fixing in the edge is preferred).</dd>
 </dl>
 
 </section>
+
+<section id="autoplay">
+<h3>Autoplay Videos </h3>
+
+<p>Provide ability to pause, mute
+and/or stop the video; make these controls keyboard navigation accessible.</p>
+
+<p>[2] Videos should be made
+available with these capabilities, as they are built into HTML 5.</p>
+<dl>
+<dt>Trade-offs</dt>
+<dd> Not redundant: an innovation
+unique to overlays of this type. Some sites offer the option. </dd>
+
+<dt>Benefit of being on the Edge:</dt>
+<dd> Apparently, after years of
+consistent effort at changing how we train designers and developers of websites
+that host video, only a subset are doing it right today, and we still need
+these controls. Having an overlay deliver these capabilities is not a problem
+for end users, it is more service for users. The overlay may escalate the need,
+hopefully attracting dev attention and encourage better source development in
+the future. Certainly, an overlay does not prevent source from being fixed,
+when it can be fixed (e.g. there are some legacy codebases where fixing in the
+edge is preferred).</dd>
+</dl>
+
+</section>
+</section>
+
+<section id="textalign">
+<h3>Text Align</h3>
+
+<p>Text alignment enhances
+readability. The inconsistent spacing between words created by justified text
+can be problematic for people with cognitive concerns such as Dyslexia. Users
+can determine the alignment best suited to their vision.</p>
+
+</section>
+<section id="lineheight">
+<h3>Line Height</h3>
+
+<p>Increase or decrease line height
+to distinguish between lines of text.</p>
+
+</section>
+</section>
+
+<section id="custneeds">
+<h1>Meeting Content Provider&apos;s Needs</h1>
+
+<section id="autoai">
+	<h2>Leveraging Automation</h2>
+
+<section id="autoWCAG">
+<h3>Automated Detection of WCAG Violations</h3>
+
+<p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
+	Large, complex and highly dynamic source sites are literally unable to reproduce every user experience permutation in their test beds. Automated detection and 
+	reporting can bridge this gap. 
+	There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here..</p>
+<dl>
+<dt>Source</dt>
+<dd>
+If source got this right (as WCAG 2.x seems to expect), we wouldn't have a need for this capability.
+</dd>
+<dt>Trade-offs</dt>
+<dd>In-browser scanners and online scanners are used to detect WCAG violations. 
+	This is the business model for many companies. 
+	False positives, false negatives, certainty and confidence scores are well-known factors affecting the success and usefulness of this approach. 
+	It is unfortunate when such violations remain unremediated in source content, but sometimes this can&apos;t be helped. 
+	An indication of violations at the edge, however rough, is better than none.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Automated detection is useful in-and-of-itself. 
+	Something is most often better than nothing, especially in the moment. 
+	It looms ever larger as it stacks, and automated detection is often the first step in a chain of capabilities.
+</dd>
+</dl>
+
+</section>
+
+</section>
+<section id="HIT">
+<h3>Human Mediated vs Fully automated remediation</h3>
+
+<p>While not the glamorous <q>holy grail</q> of technology deployment today, human mediation of A-I identified checkpoints, together with the site owner&apos;s active participation to clarify meaning and intent describes the most effective approach available today to accomplish accessibility remediations where they're needed. No other approach delivers equally effective remediations.
+</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	This is a process approach just as meaningful for remediating accessibility violations in source as it is for creating in-process remediations.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	It is clearly preferable to remediate violations in source content whenever doing so is feasible. An in-process corrective overlay remediations only make sense when there are good reasons why the source cannot be remediated. To argue any form of <q>should</q> concerning where a remediation is accomplished actually describes a theology of accessibility, not a technological solution delivering real benefits to users.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	The user always benefits when best available remediation approaches are employed. Nor will the user ever care where and how the remediation is accomplished as long as it facilitates the user&apos; s ability to function.
+</dd>
+</dl>
+ 
+
+</section>
+<section id="a11ystmnt">
+<h3>Accessibility Statement</h3>
+
+<p>Providing an easily located Accessibility Statement has become a widely accepted best practice in the industry. While there is no consensus on what all should be included, it is generally agreed that the formal Statement should define the site&apos;s commitment to accessibility of its content and services. Additional content, such as accessibility specific contact data, and accessibility specific help resources are also frequently colocated.
+</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	It is best practice to link to the Accessibility Statement (and related resources) from the site's footer.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	An Accessibility Statement introduced by edge technologies doesn&apos;t add value, though adding locale specific content might be useful.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	To the extent that locale specific data may be helpful to users, edge technology may be the best means of providing the most timely locale-specific accessibility information.
+</dd>
+</dl>
+
+</section>
+<section id="a11yprov">
+<h3>Identify the Accessibility provider</h3>
+
+<p>Display to website users the name
+(and perhaps the logo) of the primary accessibility provider, who stands behind the accessibility of
+the site. This may be part of the accessibility
+statement.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Identifying the provider of accessibility to site source is a matter of transparency and will likely be gladly accomplished by any provider taking pride in the quality of their output.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	Providing accessibility to content, whether at the source or with in-process transformations, should never be opaque. Users deserve to know who is responsible for their experience of web content.
+</dd>
+<dt>Benefit</dt>
+<dd>
+</dd>
+</dl>
+
+</section>
+
+
+<section id="a11yedit">
+<h3>Accessibility editing, by site owner</h3>
+
+<p>An interface in the overlay,
+available to authorized users, enabling manual editing of code that affects
+accessibility, e.g. alt tags for images, or ARIA labels.</p>
+<dl>
+<dt>Trade-offs</dt>
+<dd> Not redundant: an innovation
+unique to overlays of this type. Provides an alternative to standard methods of
+coding the site, either via source code, web platform templates/CSS
+adjustments, etc.</dd>
+
+<dt>Related Topics:</dt>
+<dd> This editing needs to be done
+by people with expertise. Can be a source of information for a subject matter
+expert.</dd>
+</dl>
+
+</section>
+<section id="a11yedit3rd">
+<h3>Accessibility editing, by 3rd party</h3>
+
+<p>A third party, via the overlay,
+codes the accessibility of the site.</p>
+<dl>
+<dt>Trade-offs</dt>
+<dd> Not redundant: an innovation
+unique to overlays of this type. Without an overlay, this could be an
+outsourced remediation team that has login authorization to the source code
+and/or admin of the CMS/Platform.</dd>
+</dl>
+
+</section>
+</section>
+
+<section id="usrengage">
+	<h2>User Feedback Support</h2>
+
+<section id="reporting">
+<h3>Accessibility issue reporting</h3>
+
+<p>A form, or email link, enabling
+end-users to report barriers they&apos;ve experienced to accessibility to the website owner is an industry best practice.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+Clearly, such a form-based reporting mechanism can be in source content. It is another feature that would likely be best provided along with the Accessibility Statement and related resources.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	While not obviating source based issue reporting, edge technologies are uniquely positioned to attach possibly relevant metadata to such reports.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Such a form requires the source provider to think through who should receive and process these reports. Most particularly, they will need to consider what accessibility expertise is available to evaluate and follow-up on such reports.
+</dd>
+</dl>
+ 
+</section>
+
+<section id="tooltip">
+<h3>Tooltips</h3>
+
+<p>small pop-up window that appears
+on hover to display additional information about an element on the page,
+providing context or clarification.</p>
+<dl>
+<dt>Trade-offs</dt>
+<dd> Not redundant: an innovation
+unique to overlays of this type.</dd>
+</dl>
+
+</section>
+
 <section id="dictionary">
 <h3>Dictionary</h3>
 
@@ -620,32 +725,7 @@ to overlays of this type.</dd>
 </dl>
 
 </section>
-<section id="autoplay">
-<h3>Autoplay Videos </h3>
 
-<p>Provide ability to pause, mute
-and/or stop the video; make these controls keyboard navigation accessible.</p>
-
-<p>[2] Videos should be made
-available with these capabilities, as they are built into HTML 5.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. Some sites offer the option. </dd>
-
-<dt>Benefit of being on the Edge:</dt>
-<dd> Apparently, after years of
-consistent effort at changing how we train designers and developers of websites
-that host video, only a subset are doing it right today, and we still need
-these controls. Having an overlay deliver these capabilities is not a problem
-for end users, it is more service for users. The overlay may escalate the need,
-hopefully attracting dev attention and encourage better source development in
-the future. Certainly, an overlay does not prevent source from being fixed,
-when it can be fixed (e.g. there are some legacy codebases where fixing in the
-edge is preferred).</dd>
-</dl>
-
-</section>
 <section id="externallinks">
 <h3>External Link Targets</h3>
 
@@ -727,22 +807,7 @@ racist origins, and gendered or exclusive expressions and terms that are deemed
 to exclude audiences.</p>
 
 </section>
-<section id="textalign">
-<h3>Text Align</h3>
 
-<p>Text alignment enhances
-readability. The inconsistent spacing between words created by justified text
-can be problematic for people with cognitive concerns such as Dyslexia. Users
-can determine the alignment best suited to their vision.</p>
-
-</section>
-<section id="lineheight">
-<h3>Line Height</h3>
-
-<p>Increase or decrease line height
-to distinguish between lines of text.</p>
-
-</section>
 <section id="pricing">
 <h3>Accessible Pricing (Strikethroughs)</h3>
 
