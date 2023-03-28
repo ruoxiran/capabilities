@@ -68,24 +68,6 @@ The <q>Related Topics</q> list item is a placeholder to remind us that this docu
 <section id="uxproc">
 	<h2>Creating Accessible UX</h2>
 
-<section id="usertrig">
-<h3>User-triggered Transformations</h3>
-
-<p>User can be afforded  the opportunity to opt-in to various transformations via interactive personalization menus: The end-user can access a list of available enhancements and enable those they require. </p>
-
-<dl>
-<dt>Source</dt>
-<dd>Users tend to require the same types of accomodations across all sites and all content sources. Therefore, facilitating this capability in the source is likely the least useful place to locate it, because that would require the user to select the same enhancements time and again across the succession of sites visited and likely with different menu organization site to site. </dd>
-
-<dt>Trade-offs</dt>
-<dd>Many of the capabilities made available by user-triggered opt-ins are often also found in multiple places at the edge. For example, contrast adjustment is generally found  in operating system display settings, in browser and app user-agents (e.g. dark mode/light mode), and in browser extensions, and in javascripted (CDN hosted) overlays. Such redundancy can easily lead to confusion. This confusion may be further exacerbated because certain settings the user finds helpful may be available only in one of these locations, and not in all of them. Furthermore, users are frequently not particularly knowledgeable about their operating system settings menus, especially as these tend to move with each OS revision (to take one example). This can make it difficult to locate these features, especially when we recognize that once satisfactorily configured they are generally not reset (meaning that the user doesn't need to revisit that menu location and soon forgets where it is). On the other hand, locating the accommodation consistently proximate to the user offers the highest likelihood of maximal benefit provided  the accommodation  is easily identified and invoked without conflicts. This also provides the best opportunity for easing the burden of invoking the same accommodation across a user&apos;s multiple devices.</dd>
-
-<dt>Benefit</dt>
-<dd>Users can select and optimally tune the types of accomodations that they require. Any device on the edge may also have knowledge of other devices on the edge, that may need the same adjustments, and edge technology could propagate these settings to those other devices. MacOS Ventura (MacOS 13.2) is already doing this for wifi passwords when an IOS device configured for the same network is proximate.</dd>
-</dl>
-
-</section>
-
 <section id="autobgproc">
 <h3>Fully Automated Transformations</h3>
 
@@ -156,6 +138,23 @@ ultimate reality demonstrates that their suspicion is actually incorrect.
 </dl>
 </section>
 
+<section id="usertrig">
+<h3>User-triggered Transformations</h3>
+
+<p>User can be afforded  the opportunity to opt-in to various transformations via interactive personalization menus: The end-user can access a list of available enhancements and enable those they require. </p>
+
+<dl>
+<dt>Source</dt>
+<dd>Users tend to require the same types of accomodations across all sites and all content sources. Therefore, facilitating this capability in the source is likely the least useful place to locate it, because that would require the user to select the same enhancements time and again across the succession of sites visited and likely with different menu organization site to site. </dd>
+
+<dt>Trade-offs</dt>
+<dd>Many of the capabilities made available by user-triggered opt-ins are often also found in multiple places at the edge. For example, contrast adjustment is generally found  in operating system display settings, in browser and app user-agents (e.g. dark mode/light mode), and in browser extensions, and in javascripted (CDN hosted) overlays. Such redundancy can easily lead to confusion. This confusion may be further exacerbated because certain settings the user finds helpful may be available only in one of these locations, and not in all of them. Furthermore, users are frequently not particularly knowledgeable about their operating system settings menus, especially as these tend to move with each OS revision (to take one example). This can make it difficult to locate these features, especially when we recognize that once satisfactorily configured they are generally not reset (meaning that the user doesn't need to revisit that menu location and soon forgets where it is). On the other hand, locating the accommodation consistently proximate to the user offers the highest likelihood of maximal benefit provided  the accommodation  is easily identified and invoked without conflicts. This also provides the best opportunity for easing the burden of invoking the same accommodation across a user&apos;s multiple devices.</dd>
+
+<dt>Benefit</dt>
+<dd>Users can select and optimally tune the types of accomodations that they require. Any device on the edge may also have knowledge of other devices on the edge, that may need the same adjustments, and edge technology could propagate these settings to those other devices. MacOS Ventura (MacOS 13.2) is already doing this for wifi passwords when an IOS device configured for the same network is proximate.</dd>
+</dl>
+
+</section>
 
 <section id="notify">
 <h3>Notifications</h3>
@@ -259,30 +258,22 @@ the operating system.</dd>
 </dl>
 
 </section>
-<section id="cursorsize">
-<h3>Change Cursor Size</h3>
 
-<p>Increases the standard cursor size
-by 400% to ensure the pointer always remains in sight. Allows for faster and
-more accessible navigation through hyperlinks, tabs. and form elements.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Defaults are configurable in
-the operating system.</dd>
-</dl>
+
+<section id="textalign">
+<h3>Text Align</h3>
+
+<p>Text alignment enhances
+readability. The inconsistent spacing between words created by justified text
+can be problematic for people with cognitive concerns such as Dyslexia. Users
+can determine the alignment best suited to their vision.</p>
 
 </section>
-<section id="linkviz">
-<h3>Change Link Highlights Visibility</h3>
+<section id="lineheight">
+<h3>Line Height</h3>
 
-<p>Selecting the text or image that serves
-as a hyperlink and causing it to be displayed in a different, more visible way,
-to help identify the links on a page more easily. </p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Defaults are configurable in
-the browser.</dd>
-</dl>
+<p>Increase or decrease line height
+to distinguish between lines of text.</p>
 
 </section>
 
@@ -328,23 +319,8 @@ operating system.</dd>
 
 </section>
 
-
-<section id="textalign">
-<h3>Text Align</h3>
-
-<p>Text alignment enhances
-readability. The inconsistent spacing between words created by justified text
-can be problematic for people with cognitive concerns such as Dyslexia. Users
-can determine the alignment best suited to their vision.</p>
-
 </section>
-<section id="lineheight">
-<h3>Line Height</h3>
 
-<p>Increase or decrease line height
-to distinguish between lines of text.</p>
-
-</section>
 
 <section id="semstruct">
 	<h2>Structural Semantics Remediation</h2>
@@ -362,7 +338,34 @@ helpful for understanding the overall structure of the page; links; buttons. </p
 </dl>
 
 </section>
-mm
+
+
+<section id="cursorsize">
+<h3>Change Cursor Size</h3>
+
+<p>Increases the standard cursor size
+by 400% to ensure the pointer always remains in sight. Allows for faster and
+more accessible navigation through hyperlinks, tabs. and form elements.</p>
+<dl>
+<dt>Trade-offs</dt>
+<dd> Defaults are configurable in
+the operating system.</dd>
+</dl>
+
+</section>
+<section id="linkviz">
+<h3>Change Link Highlights Visibility</h3>
+
+<p>Selecting the text or image that serves
+as a hyperlink and causing it to be displayed in a different, more visible way,
+to help identify the links on a page more easily. </p>
+<dl>
+<dt>Trade-offs</dt>
+<dd> Defaults are configurable in
+the browser.</dd>
+</dl>
+
+</section>
 <section id="resetall">
 <h3>Reset All</h3>
 
@@ -400,6 +403,7 @@ unique to overlays of this type. Some aspects can be enhanced in the operating
 system or browser configuration, such as focus indication.</dd>
 </dl>
 
+</section>
 </section>
 </section>
 
