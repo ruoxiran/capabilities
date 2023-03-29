@@ -7,6 +7,11 @@
 </title>
 
 <style>
+.rt {
+	  font-weight: bold;
+	      font-size: 110%;
+	                           color: darkred;
+				                  }
 </style>
 
 							                <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove"></script>
@@ -34,12 +39,15 @@
 	</aside>
 			        </section>
 
-				  <section id="sotd"></section>
+				  <section id="sotd">
+					  <h2>Status of this Document</h2>
+					  <p>Placeholder content which we'll remove when we're ready for respec to inject SOTD content here. Meanwhile, we're tired of seeing errors from validatornu!</p>
+				  </section>
 
 		<section id="introduction">
 	     <h2>Introduction</h2>
 									   
-<p>This document describes some capabilities that can be provided by overlays "at the edge", and attempts to answer several questions about them. The questions are:</p>
+	     <p>This document describes some capabilities important to web content accessibility that can be provided by overlays <q>at the edge</q>, and attempts to answer several questions about them. The questions are:</p>
 
 <ul>
 <li>Source: What is the role of the author (or content source code developer) in providing this capability and ensuring that it is accessible.</li>
@@ -97,8 +105,8 @@ experience of discrimination over many years.
 <dt>Benefit</dt>
 <dd>Users do indeed expect their technologies will operate automatically and seamlessly to provide an accessible and functional experience. This is an accepted technological expectation. Content providers do not err in attempting to meet this expectation. The error arises from leaving the user out of the decision loop.</dd>
 
-<dt>Related Topics</dt>
-<dd>
+<dt class="rt">Related Topics</dt>
+<dd class=rt>
 	This capability is in direct conflict with <a href="usrctrl">Preserving User Agency</a> below.
 </dd>
 
@@ -130,9 +138,9 @@ ultimate reality demonstrates that their suspicion is actually incorrect.
 <dt>Benefit</dt>
 <dd>A core user perogative is honored.</dd>
 
-<dt>Related Topics</dt>
-<dd>
-	This capability is in direct conflict with <a href="autobgproc">Fully Automated Background UX Transformations</a> above. Preserving user agency is so critical that we call it out separately as a critical capability for edge technologies. Too often it is the only feature missing from a <a href="autobgproc">Fully Automated Background UX Transformations</a> capability.
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+	This capability is in direct conflict with <a href="autobgproc">Fully Automated Background UX Transformations</a> above. Preserving user agency is so critical that we call it out separately as a critical capability for edge technologies. Too often it is the only feature missing from a <a href="autobgproc">Fully Automated Background UX Transformations</a> accessibility capability.
 </dd>
  
 </dl>
@@ -203,8 +211,8 @@ On the other hand it seems equally unlikely that edge technology alone can fully
 
 <dt>Benefit</dt>
 <dd>Configure once and deploy everywhere, with the setting propagating to other contexts.</dd>
-<dt>Related Topics</dt>
-<dd>
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
 While this capability remains aspirational in the main as of this writing, it is nevertheless an achievable goal for which edge technology is optimally suited. Many other capabilities enumerated in this document will point to this capability as an optimal implementation objective.
 </dd>
 </dl>
@@ -643,8 +651,8 @@ unique to overlays of this type. Provides an alternative to standard methods of
 coding the site, either via source code, web platform templates/CSS
 adjustments, etc.</dd>
 
-<dt>Related Topics:</dt>
-<dd> This editing needs to be done
+<dt class="rt">Related Topics:</dt>
+<dd class="rt"> This editing needs to be done
 by people with expertise. Can be a source of information for a subject matter
 expert.</dd>
 </dl>
