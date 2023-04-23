@@ -46,7 +46,46 @@
 
 		<section id="introduction">
 	     <h2>Introduction</h2>
-									   
+
+	<section id="edgedef">
+		<h3>What is meant by <q>Edge?</q></h3>
+
+		<p>The term <q>edge technology</q> refers to that portion of the assembled presentation of web content most proximate to the content user. Typically it is:</p>
+
+		<ol>
+			<li>The user agent (with its user chosen plugins and extensions) together with the physical device the user uses to read and interact with web content;</li>
+			<li>But more powerfully (as we shall soon see), it is the last compositor of content delivered to the user. It is of course cloud-based. And, while it might not be geographically proximate to the user, it functions most powerfully when it functions as the user's proxy agent for organizing web content in the manner the user is best able to use.</li>
+		</ol>
+
+		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. Much of what we discuss in this document assumes a trusted (and trustable) relationship with and on behalf of the user. Though we recognize the trust relationship inherent in edge positioned technology is today more honoured in the breach, we choose to explore the tremendous accessibility opportunities available when this trust relationship is rather honoured in the obserfvance/p>
+	</section>
+
+	     <section id=contentsource">
+	        <h3>Web Content Today</h3>
+
+		  <p>In the main the classic paradigm of a web domain owner serving content directly to end users across the Internet has long ago become a historical artifact.
+		    Today&apos;s typical web page is often a dizzying composite of multiple content streams injected from various sources, including content unique to the user&apos;s locale and even to the specific user herself. Content
+		    delivered to a user today may be a unique <q>one-off</q> composite that will change if the page is refresheda According to the <a href="https://almanac.httparchive.org/en/2021/third-parties">2021 Web Almanac</a> notes more
+		    than 20 third party injection streams for today&apos;s typical web site, with 10% containing over 90 separate content injections.</p>
+
+		    <div class="ednote"><strong>EDITOR&apos;S NOTE</strong><br /><p>
+			        We need a good graphic here.</p></div>
+
+		    <p>The source of the typical website
+		    today is actually many sources.
+
+		    <p>Even third-party plugins aren&apos;t always created by a single
+		    source. Few developers exclusively use their own code. They rely on
+		    libraries, components and frameworks to build their plugins.
+		    Edge technologies may actually be best placed to help overcome the problem
+		    of substandard accessibility in composite content delivered to end users by identifying precisely the accessibility challenges that end users may experience and helping remediate them where it matters most&mdash;at the user
+		    level, for the simple reason that technology based tracking and reporting can examine far more end user payload deliveries than human testing will ever cover. Whether the resulting remediation is an inprocess transformation,
+		    or an upstream recoding, gathering and reporting many samples to upstream end points is arguably the most efficient way to spot anomalous patterns (and a great application for <a>A-I</a> analysis).</p>
+		     
+		</section>
+		<section id="docorg">
+			<h3>About This Document</h3>
+
 	     <p>This document describes some capabilities important to web content accessibility that can be provided by overlays <q>at the edge</q>, and attempts to answer several questions about them. The questions are:</p>
 
 <ul>
@@ -75,6 +114,8 @@ The <q>Related Topics</q> list item is a placeholder to remind us that this docu
 		<li>Capabilities which are controlled by the content provider even though they can profoundly affect the accessibility experience.</li>
 	</ul>
 
+
+		</section>
 		</section>
 
 <section id="usrneeds">
@@ -82,7 +123,7 @@ The <q>Related Topics</q> list item is a placeholder to remind us that this docu
 
 <p>
 
-The capabilities discussed in this section are (or should be) controlled by the user. These are accomodations that allow users to interact with content in the way that works best for them. Whatever a content provider may have published, a user's adaptations must take precedence for accessibility to be preserved.</p>
+The capabilities discussed in this section are (or should be) controlled by the user. These are accomodations that allow users to interact with content in the way that works best for them. Whatever a content provider may have published, a user's adaptations must take precedence for accessibility to be preserved. It is critical to recognize that the user of web content is the ultimate arbiter of how it should be presented. Or, to put it in other words: <q>The author proposes; but the user disposes.</q></p>
 
 <section id="uxproc">
 	<h2>Creating Accessible UX</h2>
@@ -104,6 +145,9 @@ UX processing should be easily discoverable and defeatable. Users need to be emp
 <dd><q>Nothing about us without us</q> is a deeply held
 	principle expressing a core criterion of disability equity. For this reason alone it is
 important to preserve user agency by offering a defeat option. Nothing is
+
+
+
 gained when users are forced to contend with a remediation technology they
 suspect may be contributing to their accessibility challenges, even if the
 ultimate reality demonstrates that their suspicion is actually incorrect.
