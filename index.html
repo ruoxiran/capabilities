@@ -548,13 +548,24 @@ screen readers in an application such as a browser.</dd>
 <section id="resetall">
 <h3>Reset All</h3>
 
-<p>One button click to reset any user
-triggered enhancement and restore the page to its default state.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> No need.</dd>
-</dl>
+<p>It is only smart business practice and simple courtessy to support a <q>one button click</q> feature to reset any user
+triggered enhancement and restore the page to its default state. It should be as easy as possible for users to try different settings and undo them readily. Similarly, it should be just as easy to undo any auto-applied transformations and return a page to the settings provided directly by source. Users should be empowered to adjudge for themselves whether any applied overlay transformation actually enhances their ability to interact&mdash;and to return the overlay enhancements should they discover they&apos;re actually enhancing their experience, contrary to initial doubt!</p>
 
+<dl>
+<dt>Source</dt>
+<dd>
+This applies to source provided transformations just as much as it applies to edge provided overlay transformations.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	As previously noted some content publishers offer accessibility related page transformation overlays in their source. As also previously noted, the drawback with source provided transformations is that they must be applied over and over, site by site. If indeed a user discovers different settings are needed for different sites, this may appear to argue for not interfereing with user chosen settings on a site by site basis. On the other hand, an edge technology&mdash;especially one that is associated with a user login&mdash;can recognize the distinctions and apply heuristics to learn the nuances a user prefers, possibly enabling it to predict better what might be valuable on a newly visited site.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	The benefit available only from edge-based transformations is that they can be applied to every site the user visits to achieve consistent results.
+</dd>
+</dl>
+ 
 </section>
 
 <section id="surrogacy">
