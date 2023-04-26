@@ -514,8 +514,6 @@ operating system.</dd>
 <section id="usrmisc">
 	<h2>Miscellaneous</h2>
 
-
-
 <section id="keybdnav">
 <h3>Keyboard Navigation</h3>
 
@@ -523,13 +521,21 @@ operating system.</dd>
 support keyboard navigation such as underlines or color changes; optionally
 provide other assistance such as mapping interactive elements to keyboard
 shortcuts. </p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. Some aspects can be enhanced in the operating
-system or browser configuration, such as focus indication.</dd>
-</dl>
 
+<dl>
+<dt>Source</dt>
+<dd>
+Some content publishers offer such transformations. Also, some operating systems provide such features which should not be overwritten by browser technology, generally speaking. 
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	As noted some content publishers offer accessibility related page transformation overlays in their source. As also noted, the drawback with source provided transformations is that they must be applied over and over, site by site except when they're the result of functioning transformations enabled in the operating system of the device itself. However, when a user discovers different settings are useful for different sites, whether these are grossly distinct or highly nuanced distinctions, this may appear to argue for not interfereing with user chosen settings on a site by site basis. On the other hand, an edge technology&mdash;especially one that is associated with a user login&mdash;can recognize the distinctions and apply heuristics to learn the nuances a user prefers, possibly enabling it to predict better what might be valuable on a newly visited site.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	The benefit available only from edge-based transformations is that they can be applied to every site the user visits to achieve consistent results when nuanced results are required.
+</dd>
+</dl>
 </section>
 
 <section id="screenread">
