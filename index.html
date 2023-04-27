@@ -341,8 +341,7 @@ the browser.</dd>
 
 <section id="usrgrx">
 	<h2>Graphics Remediations</h2>
-
-
+	<p>Some users require picsel-level RGB transformations to comprehend and interact effectively with web content. This section groups those capabilities.</p>
 
 <section id="contrast">
 <h3>Color &amp; Contrast Adaptation</h3>
@@ -363,17 +362,33 @@ the operating system itself. Thus edge support needs a compelling reason to dive
 
 </section>
 
-<section id="pause">
-<h3>Pause Animations</h3>
+<section id="animation">
+<h3>Animation Control</h3>
 
-<p>The ability to stop animations or
-other moving elements on a web page from playing. </p>
+<p>Some users require the ability to stop animations or
+other moving elements on a web page from playing entirely. Others may wish to see them under direct user control, i.e. as a series of steps. </p>
+
 <dl>
-<dt>Trade-offs</dt>
-<dd> Some players offer a pause.
-Context menu or developer tools. </dd>
-</dl>
+<dt>Source</dt>
+<dd>
+	It is possible to support this feature in source, e.g. using CSS Media Queries 5.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	As with other presentational behaviors described in this document, users who require this capability likely require it across all sites they may use. Thus overlay edge technologies afford the best prospect to meet the need globally.
+</dd>
+<dt>Benefit</dt>
+<dd>
+An accessible overlay can provide this functionality across all sites the user accesses. And, when provided via the login-based cloud service, it can do so across the full portfolio of the user&apos;s devices.
+</dd>
 
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+	This capability is yet another example of <a href="#portable">configure once, use everywhere</a> only available through accessible edge technologies.
+</dd>
+
+</dl>
+ 
 </section>
 
 
