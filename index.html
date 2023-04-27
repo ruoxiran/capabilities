@@ -391,30 +391,29 @@ An accessible overlay can provide this functionality across all sites the user a
  
 </section>
 
-
 <section id="autoplay">
 <h3>Autoplay Videos </h3>
+<p>Some users are impeded when media begins playing on page load. Screen reader users may need playback paused until they've assured themselves they&apos;ve heard all the information theeir TTS can provide on any given page. Others will seek to enable captions (and possibly even automated language translation) before playback begins. It is also necessary to support a mute function which can be invoked by touch, mouse, keyboard, or other control mapped for such purposes.</p>
 
-<p>Provide ability to pause, mute
-and/or stop the video; make these controls keyboard navigation accessible.</p>
-
-<p>[2] Videos should be made
-available with these capabilities, as they are built into HTML 5.</p>
 <dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. Some sites offer the option. </dd>
+<dt>Source</dt>
+<dd>
+	It is possible to support this feature in source using native HTML</p>
 
-<dt>Benefit of being on the Edge:</dt>
-<dd> Apparently, after years of
-consistent effort at changing how we train designers and developers of websites
-that host video, only a subset are doing it right today, and we still need
-these controls. Having an overlay deliver these capabilities is not a problem
-for end users, it is more service for users. The overlay may escalate the need,
-hopefully attracting dev attention and encourage better source development in
-the future. Certainly, an overlay does not prevent source from being fixed,
-when it can be fixed (e.g. there are some legacy codebases where fixing in the
-edge is preferred).</dd>
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	As with other presentational behaviors described in this document, users who require this capability likely require it across all sites they may use. Thus overlay edge technologies afford the best prospect to meet the need globally.
+</dd>
+<dt>Benefit</dt>
+<dd>
+An accessible overlay can provide this functionality across all sites the user accesses. And, when provided via the login-based cloud service, it can do so across the full portfolio of the user&apos;s devices.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+	This capability is yet another example of <a href="#portable">configure once, use everywhere</a> only available through accessible edge technologies.
+</dd>
 </dl>
 
 </section>
@@ -422,15 +421,30 @@ edge is preferred).</dd>
 <section id="cursorsize">
 <h3>Change Cursor Size</h3>
 
-<p>Increases the standard cursor size
-by 400% to ensure the pointer always remains in sight. Allows for faster and
+<p>Some users require a more visible cursor and appreciate the capability that can increase the standard cursor size
+by up to 400% to ensure the pointer always remains visible. This allows for faster and
 more accessible navigation through hyperlinks, tabs. and form elements.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Defaults are configurable in
-the operating system.</dd>
-</dl>
 
+<dl>
+<dt>Source</dt>
+<dd>
+	It is possible to support this feature in source content directly.
+
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	As with other presentational behaviors described in this document, users who require this capability likely require it across all sites they may use. Thus overlay edge technologies afford the best prospect to meet the need globally.
+</dd>
+<dt>Benefit</dt>
+<dd>
+An accessible overlay can provide this functionality across all sites the user accesses. And, when provided via the login-based cloud service, it can do so across the full portfolio of the user&apos;s devices.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+	This capability is yet another example of <a href="#portable">configure once, use everywhere</a> only available through accessible edge technologies.
+</dd>
+</dl>
 </section>
 
 </section>
