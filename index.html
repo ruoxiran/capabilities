@@ -290,33 +290,36 @@ It has long been agreed that published content should contain structural markup 
 </dd>
 <dt>Benefit</dt>
 <dd>
-	An edge technology brings consistency to the user experience across whatever sites the user may access by locating similar controls similarly.
+	An edge technology can bring consistency and predictability to the user experience across whatever sites the user may access by locating similar controls similarly.
 </dd>
 </dl>
 
 </section>
 
 <section id="FormLabel">
-<h3>Form Label Clarification</h3>
+<h3>Form Label<s/h3>
 
-<p>A label associated with each form
-field accurately describing its purpose. The label should be consistent with
-the logical structure of the form overall.</p>
+		<p>Forms are the fundamental interface of the interactive web. Programmatic labels for each data entry field or option selecting widget  on any form are critical for many users requiring accessibility support. Furthermore, consistent grouping and form controls on screen location is also critical.</p>
 
-<p>[2] Code with proper form labels.</p>
 <dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type.</dd>
+<dt>Source</dt>
+<dd>
+Far too many sites fail to use available markup to associate date entry fields and status selection control widgets with the labels the print to screen. These sites expect nondisabled users will simply understand what label applies to what field and widget by virtue of how the two are printed to screen. The user who relies on programmatic association is thus disadvantaged.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+	Clearly source should be performing this function. That fact that it is missing from so many sites cries out for remediation technology on the edge. Furthermore, advanced strategies to sequence completion of complex forms for persons who are easily overwhelmed by on screen complexity are frustrated when these programmatic associations are missing.
+</dd>
+<dt>Benefit</dt>
+<dd>
+Well built edge technologies can introduce missing programmatic associations. Furthermore, they are the only technologies that can bring consistent organization to a form.
+</dd>
 
-<dt>Benefit of being on the Edge:</dt>
-<dd> Apparently, after twenty years
-of consistent effort at changing how we train designers and developers of
-forms, only a subset are doing it right today, but we still need the labels.
-Having an overlay provide them escalates the need, hopefully attracts dev
-attention and gets the resource allocated. Certainly, an overlay does not
-prevent source from being fixed, when it can be fixed (e.g. there are some
-legacy codebases where fixing in the edge is preferred).</dd>
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+	This pervasive problem in interactive content today is also related to <a href="#structnorm">Normalize the Structural Composite</a> overlay edge capability described above.
+</dd>
+
 </dl>
 
 </section>
