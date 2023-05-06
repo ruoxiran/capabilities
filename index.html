@@ -962,14 +962,21 @@ As previously noted, users will need the same (or very similar) feature support 
 <section id="imagealts">
 <h3>Image Alt Provisioning</h3>
 
-<p>Short piece of text associated with
-an image on a web page. It is intended to provide a description of the image
-for users who cannot see it, such as those using screen readers or text-only
-browsers.</p>
+<p>Supply missing alternative text for content images.</p>
+
 <dl>
-<dt>Trade-offs</dt>
-<dd> Some computer vision image
-identification is included in some browser extensions.</dd>
+<dt>Source</dt>
+<dd>
+	Clearly, alternative text should be supplied by source content. This capability serves as a fundamental accessibility remediation when immediate remediations to the source content are infeasible for some reason.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+Some browser extensions support A-I based alternative text remediation. However, A-I remediation is still considered less accurate, and therefore less desirable than human provided text alternatives.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Good alternative text is often essential for comprehending site content for users who cannot see, but also for users on highly restricted bandwidth as continues to exist in many regions of the world.
+</dd>
 </dl>
 
 </section>
