@@ -830,7 +830,7 @@ We emphasize the critical importance of preserving <a href="usrctrl">Preserving 
 
 <p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
 	Large, complex and highly dynamic source sites are literally unable to reproduce every user experience permutation in their test beds. Automated detection and 
-	reporting can bridge this gap. 
+	reporting can help bridge this gap. 
 	There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here..</p>
 <dl>
 <dt>Source</dt>
@@ -880,20 +880,33 @@ If source got this right (as WCAG 2.x seems to expect), we wouldn't have a need 
 <section id="a11yedit">
 <h3>Accessibility editing, by site owner</h3>
 
-<p>An interface in the overlay,
-available to authorized users, enabling manual editing of code that affects
+<p>This capability describes an interface in the overlay,
+available to authorized users, enabling manual editing of source code that affects
 accessibility, e.g. alt tags for images, or ARIA labels.</p>
-<dl>
-<dt>Trade-offs</dt>
-<dd> Not redundant: an innovation
-unique to overlays of this type. Provides an alternative to standard methods of
-coding the site, either via source code, web platform templates/CSS
-adjustments, etc.</dd>
 
-<dt>Related Topics:</dt>
-<dd class="rt"> This editing needs to be done
-by people with expertise. Can be a source of information for a subject matter
-expert.</dd>
+<dl>
+<dt>Source</dt>
+<dd>
+	Where the source lacks sufficient accessibility supporting markup, this capability provides both analytics and remediation access to properly authenticated 
+persons empowered to perform remediation. Note the assumption is that, for whatever reason, the content technology provided by the hosting environment lacks adequate accessibility supporting technology.
+</dd>
+<dt>Tradeoffs</dt>
+<dd>
+This is not  a redundant capability. Rather, it is an innovation only available from edge technology. Equivalent technology in source would require the site publisher to establish a complete panoply of content management tooling. While this is certainly feasible, not everyone wishing to make content available on line desires to spend time gaining proficiency with content management systems. On the other hand a properly configured content hosting environment may indeed accomplish accessible content publication. This capability exists to assist sites who fail accessibility, usually for a complex set of reasons where source remediation is expensive or otherwise not readily achievable.
+The capability is unique to overlays of this type. It provides an alternative to standard methods of
+coding the site, either via source code, web platform templates/CSS
+adjustments, etc.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	This capability facilitates adding missing accessibility supporting markup to source content.
+</dd>
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+This editing typically needs to be accomplished
+by an accessibility markup expert. It can also serve as an informational and learning resource  for other subject-matter
+experts, i.e. those providing the substantive content published by the site.
+</dd>
 </dl>
 
 </section>
