@@ -57,7 +57,7 @@
 			<li>But more powerfully (as we shall soon see), it is the last compositor of content delivered to the user. It is of course cloud-based. And, while it might not be geographically proximate to the user, it functions most powerfully when it functions as the user's proxy agent for organizing web content in the manner the user is best able to use.</li>
 		</ol>
 
-		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. Much of what we discuss in this document assumes a trusted (and trustable) relationship with and on behalf of the user. Though we recognize the trust relationship inherent in edge positioned technology is today more honoured in the breach, we choose to explore the tremendous accessibility opportunities available when this trust relationship is rather honoured in the observance
+		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. Much of what we discuss in this document assumes a trusted (and trustable) relationship with and on behalf of the user. Though we recognize the trust relationship inherent in edge positioned technology is today more honoured in the breach, we choose to explore the tremendous accessibility opportunities available when this trust relationship is rather honoured in the obserfvance/p>
 	</section>
 
 	     <section id="contentsource">
@@ -65,7 +65,7 @@
 
 		  <p>In the main the classic paradigm of a web domain owner serving content directly to end users across the Internet has long ago become a historical artifact.
 		    Today&apos;s typical web page is often a dizzying composite of multiple content streams injected from various sources, including content unique to the user&apos;s locale and even to the specific user herself. Content
-		    delivered to a user today may be a unique <q>one-off</q> composite that will change if the page is refreshed. The <a href="https://almanac.httparchive.org/en/2021/third-parties">2021 Web Almanac</a> notes more
+		    delivered to a user today may be a unique <q>one-off</q> composite that will change if the page is refresheda According to the <a href="https://almanac.httparchive.org/en/2021/third-parties">2021 Web Almanac</a> notes more
 		    than 20 third party injection streams for today&apos;s typical web site, with 10% containing over 90 separate content injections.</p>
 
 		    <div class="ednote"><strong>EDITOR&apos;S NOTE</strong><br><p>
@@ -79,10 +79,8 @@
 		    libraries, components and frameworks to build their plugins.
 		    Edge technologies may actually be best placed to help overcome the problem
 		    of substandard accessibility in composite content delivered to end users by identifying precisely the accessibility challenges that end users may experience and helping remediate them where it matters most&mdash;at the user
-		    level, for the simple reason that technology based tracking and reporting can examine far more end user payload deliveries than human testing will ever cover. 
-		    In particular, we consider all the possibilities near the edge namely the CDN, operating system, user-agent, browser extension, assistive technology, and/or javascript overlay. 
-		    Whether the resulting remediation is an inprocess transformation,
-		    or an upstream recoding, gathering and reporting many samples to upstream end points is arguably the most efficient way to spot anomalous patterns (and a great application for AI analysis).</p>
+		    level, for the simple reason that technology based tracking and reporting can examine far more end user payload deliveries than human testing will ever cover. Whether the resulting remediation is an inprocess transformation,
+		    or an upstream recoding, gathering and reporting many samples to upstream end points is arguably the most efficient way to spot anomalous patterns (and a great application for <a>A-I</a> analysis).</p>
 		     
 		</section>
 		<section id="docorg">
@@ -93,7 +91,7 @@
 <ul>
 <li>Source: What is the role of the author (or content source code developer) in providing this capability and ensuring that it is accessible.</li>
 
-<li>Trade-offs When this capability is enabled on the edge, does it potentially duplicate functionality elsewhere in the stack? If so, can (and should) this redundancy be avoided?</li>
+<li>Trade-offs When this capability is enabled on the edge, does it potentially duplicate functionality elsewhere in the stack? In particular, we consider all the possibilities near the edge namely the CDN, operating system, user-agent, browser extension, assistive technology, and/or javascript overlay. If so, can (and should) this redundancy be avoided?</li>
 
 <li>Benefit: What is the potential benefit of performing this capability at the edge?</li>
 
@@ -102,18 +100,113 @@
 
 <aside class="note" role="region" title="Editor&apos;s note" aria-label="Editor's note">
 	<div role="heading" class="ednote-title marker" aria-level="3">
+		<span>Editor&apos;s note</span>
 		</div>
 	<div>
 The <q>Related Topics</q> list item is a placeholder to remind us that this document is in active development. Suggestions welcome!
 		</div>
 	</aside>
-
+<!-- inserting definition of the two roles -->
 	<p>Please note the capabilities discussed are organized under two primary categories with several subcategories under each primary section. The primary categories are:</p>
 
 	<ul>
 		<li>Capabilities the end user can (or should) be able to control fully.</li>
 		<li>Capabilities which are controlled by the content provider even though they can profoundly affect the accessibility experience.</li>
 	</ul>
+
+<p>Please note the capabilities discussed are organized under two primary categories with several subcategories under each primary section. The primary categories are:</p>
+
+<ul>
+	<li>Capabilities the end user can (or should) be able to control fully.</li>
+	<li>Capabilities which are controlled by the content provider even though they can profoundly affect the accessibility experience.</li>
+</ul>
+
+<p>This two-point system conforms with client-server architecture, the backbone of all digital transactions and interactions that take place over the internet.
+
+<p>The Content Provider, analogous to the server, plays the pivotal role of producing and delivering diverse forms of digital content, ranging from text, images, audio, video, to interactive elements. They create and curate experiences that users consume and engage with, thereby shaping the digital landscape.
+
+A selection of some primary Content Provider roles:
+<table>
+  <tr>
+    <th>Role</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>Authors</td>
+    <td>Responsible for generating the primary content, be it text, script for audio/video, or conceptual outlines for interactive elements.</td>
+  </tr>
+  <tr>
+    <td>Designers</td>
+    <td>Work on the aesthetic aspects of the content, including the layout, color scheme, typography, and visual elements. They also handle the user interface and user experience design for interactive content.</td>
+  </tr>
+  <tr>
+    <td>Product Owners</td>
+    <td>Oversee the overall content creation and distribution project, making key decisions and coordinating between different teams to ensure the final product meets the intended objectives.</td>
+  </tr>
+  <tr>
+    <td>Brand Managers</td>
+    <td>Ensure the content aligns with the brand's image, values, and messaging. They also analyze the impact of the content on the brand's reputation and visibility.</td>
+  </tr>
+  <tr>
+    <td>Frontend Developers</td>
+    <td>Implement the designs into functional code. They work on the website or application where the content will be hosted, ensuring it's responsive, functional, and accessible.</td>
+  </tr>
+  <tr>
+    <td>Growth Marketers</td>
+    <td>Utilize data-driven marketing techniques to help the business expand its customer base. They use various strategies and tools to attract, engage, and retain users.</td>
+  </tr>
+  <tr>
+    <td>Marketing Managers</td>
+    <td>Oversee and implement the marketing strategy for the content. They coordinate marketing campaigns and work closely with other teams to ensure the content reaches the desired audience.</td>
+  </tr>
+  <tr>
+    <td>Third-party Service Providers</td>
+    <td>Offer various functionalities that can be integrated into the digital content, such as payment gateways, embedded maps, user-generated content, and more.</td>
+  </tr>
+</table>
+
+
+<p>On the other end of the spectrum is the End User, or the client, who consumes this digital content. End users span a wide range, varying in their demographic, cognitive, and physical attributes. They also bring to the table their unique needs, preferences, and accessibility requirements. It is for these users that content providers shape their digital content and experiences, with or without the knowledge that the user's own hardware and software may render it in ways the Content Provider never imagined. 
+
+Content sites are inherently dynamic; they are assembled for the end-user in a mashup, a unique blend of content that can vary significantly from user to user. A selection of some of the hardware, software, tools and technologies that participate in this edge activity include
+
+<table>
+  <tr>
+    <th>Technology</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>User-Agent (Browser)</td>
+    <td>A user-agent, in this context, refers to the web browser which interprets and presents web content to the end user. Different browsers may render web content in slightly different ways due to their different rendering engines.</td>
+  </tr>
+  <tr>
+    <td>Assistive Technology</td>
+    <td>Devices or software applications designed to assist individuals with disabilities or impairments. This could include screen readers, alternative input devices, and voice recognition software.</td>
+  </tr>
+  <tr>
+    <td>Browser Extensions</td>
+    <td>Add-ons or plugins that extend the functionality of a web browser. These could alter the appearance of web content, block advertisements, or add additional features to a webpage.</td>
+  </tr>
+  <tr>
+    <td>OS and Software Applications</td>
+    <td>Programs or groups of programs designed for end users, running on the local operating system. Applications can vary drastically in purpose, from productivity apps to entertainment apps, and can influence how digital content is accessed and interacted with.</td>
+  </tr>
+  <tr>
+    <td>Video/Audio Systems</td>
+    <td>Hardware and software components that control the output of video and sound.</td>
+  </tr>
+  <tr>
+    <td>CDN Caching</td>
+    <td>Content Delivery Networks (CDNs) store copies of web content in various locations around the world to reduce the physical distance between the server and the user, improving site performance. The CDN caching can affect the delivery and updating of digital content.</td>
+  </tr>
+  <tr>
+    <td>Mashup Tools</td>
+    <td>Software tools or web services that combine content from more than one source into a single integrated experience. These can greatly modify the original content and how it is presented to the user.</td>
+  </tr>
+</table>
+
+
+<p>This two-point digital communication model is not a one-way street, but a dynamic interaction. Feedback from end users can influence and improve the content generated by providers, while content providers continuously adapt their strategies based on user behavior and needs. The feedback loops become more complex as edge technologies come into play, adding another layer of adaptability and personalization to the model.
 
 
 		</section>
@@ -817,7 +910,16 @@ Best
 <section id="custneeds">
 <h1>Meeting Content Provider&apos;s Needs</h1>
 
+<!-- new intro here -->
 <p>This section gathers capabilities whose accessibility is primarily controlled by the content provider.</p>
+
+<p>An over-riding concern at the time of this writing is the need to conform with WCAG 2.1 AA success criteria,
+which leads to many items in this section reflecting that approach. 
+But this is just the start. Content Providers shape the key elements or features of their digital content in support of the intended user journey. 
+As stated above, this often relies on dynamic services supplied by third parties, many of which are added in an effort to further accomodate, 
+engage and please the end user. 
+	
+<!-- end new intro here -->
 
 <section id="autoai">
 	<h2>Leveraging Automation</h2>
