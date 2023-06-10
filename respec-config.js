@@ -40,36 +40,10 @@ var respecConfig = {
 	editors: [
 		{
 			name: "Janina Sajka",
-                        URL: "https://linkedin.com/in/jsajka",
-			                        mailto: "janina@rednote.net",
+			url: "http://rednote.net/",
 			w3cid: 33688
 		}
 ],
-	
-	authors:		[
-	// authors, add as many as you like.
-	// This is optional, uncomment if you have authors as well as editors.
-	// only "name" is required. Same format as editors.
-	
-	//authors:  [
-	//    { name: "Your Name", url: "http://example.org/",
-	//      company: "Your Company", companyURI: "http://example.com/" },
-	//],
-	
-	                {
-				                        name: "Janina Sajka",
-                        URL: "https://linkedin.com/in/jsajka",
-				                        mailto: "janina@rednote.net",
-				                        w3cid: 33688
-				                }
-		{
-		      name: "Lionel Wolberger",
-			          company: "Userway",
-				        companyURL: "https://userway.org/",
-					      mailto: "lionel@userway.org",
-					            w3cid: 106386
-							        },
-	],
 	
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
