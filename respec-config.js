@@ -40,7 +40,8 @@ var respecConfig = {
 	editors: [
 		{
 			name: "Janina Sajka",
-			url: "http://rednote.net/",
+                        URL: "https://linkedin.com/in/jsajka",
+			                        mailto: "janina@rednote.net",
 			w3cid: 33688
 		}
 ],
@@ -55,6 +56,12 @@ var respecConfig = {
 	//      company: "Your Company", companyURI: "http://example.com/" },
 	//],
 	
+	                {
+				                        name: "Janina Sajka",
+                        URL: "https://linkedin.com/in/jsajka",
+				                        mailto: "janina@rednote.net",
+				                        w3cid: 33688
+				                }
 		{
 		      name: "Lionel Wolberger",
 			          company: "Userway",
@@ -62,11 +69,6 @@ var respecConfig = {
 					      mailto: "lionel@userway.org",
 					            w3cid: 106386
 							        },
-	                {
-				                        name: "Janina Sajka",
-				                        url: "http://rednote.net/",
-				                        w3cid: 33688
-				                }
 	],
 	
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
