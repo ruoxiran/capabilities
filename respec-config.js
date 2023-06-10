@@ -44,32 +44,8 @@ var respecConfig = {
 			w3cid: 33688
 		}
 ],
-
-	        authors:                [
-			        // authors, add as many as you like.
-			//         // This is optional, uncomment if you have authors as well as editors.
-			//                 // only "name" is required. Same format as editors.
-			//
-			//                         //authors:  [
-			//                                 //    { name: "Your Name", url: "http://example.org/",
-			//                                         //      company: "Your Company", companyURI: "http://example.com/" },
-			//                                                 //],
-			//
-			//                                                                 {
-			//                                                                                       name: "Lionel Wolberger",
-			//                                                                                                                         company: "Userway",
-			//                                                                                                                                                                 companyURL: "https://userway.org/",
-			//                                                                                                                                                                                                               mailto: "lionel@userway.org",
-			//                                                                                                                                                                                                                                                                   w3cid: 106386
-			//                                                                                                                                                                                                                                                                                                                                   },
-			//                                                                                                                                                                                                                                                                                                                                                           {
-			//                                                                                                                                                                                                                                                                                                                                                                                                                   name: "Janina Sajka",
-			//                                                                                                                                                                                                                                                                                                                                                                                                                                                                           url: "http://rednote.net/",
-			//                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   w3cid: 33688
-			//                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   }
-			//                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           ],
-			//
-			//
+	
+	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
 	// name of the WG
 	group:           "a11yedge",
