@@ -34,7 +34,7 @@
 			the overlay provider&apos;s servers,  before the content is delivered to the end user. While this routing paradigm is by no means unique to accessibility applications, it does introduce accessibility opportunities and
 			challenges.</p>
 
-			<p>In this document we explore the specific capabilities that are, or could be applied for accessibility purposes both by overlay technologies and by browser extensions and plugins installed on user&apos;s devices. Some of the capabilities explored here are already available and used in web content delivery systems today. Others suggest best practices guidance. Still others strike us as highly desirable, but will require the creation of a normative W3C specification, especially in the case of cross-platform functionality. As with the accessibility impact of any web technology, poor implementation will predictably yield unsatisfactory user experiences, while well-crafted solutions may significantly enhance the user&apos;s experience.</p>
+			<p>In this document we explore the specific capabilities that are, or could be,  applied for accessibility purposes whether by overlay technologies, browser extensions, plugins installed on user&apos;s devices and so on. Some of the capabilities explored here are already available and used in web content delivery systems today. Others suggest best practices guidance. Still others strike us as highly desirable, but will require the creation of a normative W3C specification, especially in the case of cross-platform functionality. As with the accessibility impact of any web technology, poor implementation will predictably yield unsatisfactory user experiences, while well-crafted solutions may significantly enhance the user&apos;s experience.</p>
 
 			        </section>
 
@@ -46,20 +46,20 @@
 	     <h2>Introduction</h2>
 
 	<section id="edgedef">
-		<h3>What is meant by <q>Edge?</q></h3>
+		<h3>What is Meant By <q>Edge?</q></h3>
 
 		<p>The term <q>edge technology</q> refers to that portion of the assembled presentation of web content most proximate to the content user. Typically it is:</p>
 
 		<ol>
-			<li>The user agent (with its user chosen plugins and extensions) together with the physical device the user uses to read and interact with web content;</li>
-			<li>But more powerfully (as we shall soon see), it is the last compositor of content delivered to the user. It is of course cloud-based. And, while it might not be geographically proximate to the user, it functions most powerfully when it functions as the user's proxy agent for organizing web content in the manner the user is best able to use.</li>
+			<li>The user agent (with its user chosen plugins and extensions) together with the host and physical device the user uses to read and interact with web content;</li>
+			<li>But more powerfully (as we shall soon see), it is the last compositor of content delivered to the user. It is of course cloud-based. And, while it might not be geographically proximate to the user, it functions most powerfully when it functions as the user&apos;s proxy agent for organizing web content in the manner the user is best able to use.</li>
 		</ol>
 
-		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. Much of what we discuss in this document assumes a trusted (and trustable) relationship with and on behalf of the user. Though we recognize the trust relationship inherent in edge positioned technology is today more honored in the breach, we choose to explore the tremendous accessibility opportunities available when this trust relationship is rather honored in the observance/p>
+		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. Much of what we discuss in this document assumes a trusted (and trustable) relationship with and on behalf of the user. Though we recognize the trust relationship inherent in edge positioned technology is today more honored in the breach, we choose to explore the tremendous accessibility opportunities available when this trust relationship is rather honored in the observance.</p>
 	</section>
 
 	     <section id="contentsource">
-	        <h3>Web Content Today</h3>
+	        <h3>Web Content Today is Dynamic</h3>
 
 		  <p>In the main the classic paradigm of a web domain owner serving content directly to end users across the Internet has long ago become a historical artifact.
 		    Today&apos;s typical web page is often a dizzying composite of multiple content streams injected from various sources, including content unique to the user&apos;s locale and even to the specific user herself. Content
@@ -69,40 +69,39 @@
 		    <p>The source of the typical website
 		    today is actually many sources.
 
-		    <p>Even third-party plugins aren&apos;t always created by a single
+		    Even bespoke web applications aren&apos;t always created by a single
 		    source. Few developers exclusively use their own code. They rely on
-		    libraries, components and frameworks to build their plugins.
-		    Edge technologies may actually be best placed to help overcome the problem
+		    libraries, components and frameworks to build their plugins.</p>
+		    
+		    <p> Edge technologies may actually be best placed to help overcome the problem
 		    of substandard accessibility in composite content delivered to end users by identifying precisely the accessibility challenges that end users may experience and helping remediate them where it matters most&mdash;at the user
-		    level, for the simple reason that technology based tracking and reporting can examine far more end user payload deliveries than human testing will ever cover. Whether the resulting remediation is an in-process transformation,
+		    level, for the simple reason that technology based tracking and reporting can examine far more end user payload deliveries than human testing will ever cover. In particular we consider the role played by various edge-based players beginning with the Content Delivery Network (CDN), the operating system on the user&apos;s devices, user-agent, browser extensions, assistive technologies, and/or javascript overlays.  Whether the resulting remediation is an in-process transformation,
 		    or an upstream recoding, gathering and reporting many samples to upstream end points is arguably the most efficient way to spot anomalous patterns (and a great application for <a>A-I</a> analysis).</p>
 		     
 		</section>
 		<section id="docorg">
 			<h3>About This Document</h3>
 
-	     <p>This document describes some capabilities important to web content accessibility that can be provided by overlays <q>at the edge</q>, and attempts to answer several questions about them. The questions are:</p>
+	     <p>This document describes some capabilities important to web content accessibility that can be provided <q>at the edge</q>, and attempts to answer several questions about them. The questions are:</p>
 
 <ul>
-<li>Source: What is the role of the author (or content source code developer) in providing this capability and ensuring that it is accessible.</li>
+<li>Source: What is the role of the author (or content source code developer) in providing this capability and ensuring that it is accessible?</li>
 
-<li>Trade-offs When this capability is enabled on the edge, does it duplicate functionality elsewhere in the stack? In particular we consider the various possibilities near the edge beginning with the Content Delivery Network (CDN), the operating system on the user&apos;s devices, user-agent, browser extensions, assistive technologies, and/or javascript overlays. When we find  redundancies, we ask whether they can and should be avoided?</li>
+<li>Trade-offs: When this capability is enabled on the edge, does it duplicate functionality elsewhere in the stack? When we find  redundancies, we ask whether they can and should be avoided?</li>
 
 <li>Benefit: What is the potential benefit of performing this capability at the edge?</li>
 
-<li>Related topics: We add this field to draw attention to capabilities that are related in some way, e.g. perhaps they&apos;re mutually enhancing, or perhaps they are the prospective benefit of a normative cross-platform behavior specification that could significantly alleviate a need to configure the same capability on multiple devices by facilitating a <q>Configure Once, Deploy Everywhere</q> efficiency capability</li>
+<li>Related topics: Draw attention to capabilities that are related in some way, e.g. perhaps they&apos;re mutually enhancing, or perhaps they are the prospective benefit of a normative cross-platform behavior specification.</li>
 </ul>
 
-	<p>The capabilities discussed are organized under two primary categories with several subcategories under each primary section. The primary categories are:</p>
+	<p>The capabilities discussed are organized under two primary categories with several subcategories under each primary section. This two-poled approach conforms with client-server architecture, the backbone of all digital transactions and interactions that take place over the Internet.The primary categories are:</p>
 
 	<ul>
 		<li>Capabilities the end user can (or should) be able to control fully.</li>
 		<li>Capabilities which are necessarily controlled by the content provider even though they can profoundly affect the accessibility experience.</li>
 	</ul>
 
-<p>This two-point system conforms with client-server architecture, the backbone of all digital transactions and interactions that take place over the internet.
-
-<p>The Content Provider, analogous to the server, plays the pivotal role of producing and delivering diverse forms of digital content, ranging from text, images, audio, video, to interactive elements. They create and curate experiences that users consume and engage with, thereby shaping the digital landscape.
+<p>The Content Provider, analogous to the server, plays the pivotal role of specifying and delivering diverse forms of digital content ranging from text, images, audio, video, to interactive elements. They curate the experiences that users consume and engage with, thereby shaping the digital landscape.
 
 A selection of some primary Content Provider roles:
 <table>
@@ -111,43 +110,32 @@ A selection of some primary Content Provider roles:
     <th>Description</th>
   </tr>
   <tr>
-    <td>Authors</td>
+    <td>Author</td>
     <td>Responsible for generating the primary content, be it text, script for audio/video, or conceptual outlines for interactive elements.</td>
   </tr>
   <tr>
-    <td>Designers</td>
-    <td>Work on the aesthetic aspects of the content, including the layout, color scheme, typography, and visual elements. They also handle the user interface and user experience design for interactive content.</td>
+    <td>Designer</td>
+    <td>Work on the aesthetic aspects of the content including the layout, color scheme, typography, and visual elements. They also handle the user interface and user experience design for interactive content.</td>
   </tr>
   <tr>
-    <td>Product Owners</td>
-    <td>Oversee the overall content creation and distribution project, making key decisions and coordinating between different teams to ensure the final product meets the intended objectives.</td>
+    <td>Product Owner</td>
+    <td>Oversee the overall content creation and distribution project, make key decisions and coordinate between different teams to ensure the final product meets its intended objectives.</td>
   </tr>
   <tr>
-    <td>Brand Managers</td>
-    <td>Ensure the content aligns with the brand's image, values, and messaging. They also analyze the impact of the content on the brand's reputation and visibility.</td>
+    <td>Developer</td>
+    <td>Implement the designs into functional code. They work on the website or application where the content will be hosted, ensuring its responsive, functional, and accessible. Some write proprietary algorithms, but most call and configure frameworks and libraries written by communities of coders.</td>
   </tr>
   <tr>
-    <td>Front-end Developers</td>
-    <td>Implement the designs into functional code. They work on the website or application where the content will be hosted, ensuring it's responsive, functional, and accessible.</td>
-  </tr>
-  <tr>
-    <td>Growth Marketers</td>
-    <td>Utilize data-driven marketing techniques to help the business expand its customer base. They use various strategies and tools to attract, engage, and retain users.</td>
-  </tr>
-  <tr>
-    <td>Marketing Managers</td>
-    <td>Oversee and implement the marketing strategy for the content. They coordinate marketing campaigns and work closely with other teams to ensure the content reaches the desired audience.</td>
-  </tr>
-  <tr>
-    <td>Third-party Service Providers</td>
-    <td>Offer various functionalities that can be integrated into the digital content, such as payment gateways, embedded maps, user-generated content, and more.</td>
+    <td>Marketer</td>
+    <td>Oversee and implement the marketing strategy for the content. They coordinate marketing campaigns and work closely with other teams to ensure the content reaches the desired audience. Growth marketers utilize data-driven marketing techniques to help the business expand its customer base. They use various strategies and tools to attract, engage, and retain users driving critical website requirements.</td>
   </tr>
 </table>
 
 
-<p>On the other end of the spectrum is the End User, or the client, who consumes this digital content. End users span a wide range, varying in their demographic, cognitive, and physical attributes. They also bring to the table their unique needs, preferences, and accessibility requirements. It is for these users that content providers shape their digital content and experiences, with or without the knowledge that the user's own hardware and software may render it in ways the Content Provider never imagined. 
+<p>On the other end of the spectrum is the End User, or the client, who experiences this digital content. End users span a wide range, varying in their demographic, cognitive, and physical attributes. They also bring to the table their unique needs, preferences, and accessibility requirements. It is for these users that content providers shape their digital content and experiences, with or without the knowledge that the user&apos;
+s own hardware and software may render it in ways the Content Provider never imagined. </p>
 
-Content sites are inherently dynamic; they are assembled for the end-user in a mashup, a unique blend of content that can vary significantly from user to user. A selection of some of the hardware, software, tools and technologies that participate in this edge activity include
+<P>Content sites are inherently dynamic; they are assembled for the end-user in a mashup, a unique blend of content that can vary significantly from user to user. A selection of some of the hardware, software, tools and technologies that participate in this edge activity include:</p>
 
 <table>
   <tr>
@@ -156,37 +144,32 @@ Content sites are inherently dynamic; they are assembled for the end-user in a m
   </tr>
   <tr>
     <td>User-Agent (Browser)</td>
-    <td>A user-agent, in this context, refers to the web browser which interprets and presents web content to the end user. Different browsers may render web content in slightly different ways due to their different rendering engines.</td>
+    <td>Interprets and presents web content to the end user. Different browsers may render web content in slightly different ways due to their different rendering engines.</td>
   </tr>
   <tr>
     <td>Assistive Technology</td>
-    <td>Devices or software applications designed to assist individuals with disabilities or impairments. This could include screen readers, alternative input devices, and voice recognition software.</td>
+    <td>Devices or software applications that assist individuals with disabilities or impairments. This could include screen readers, alternative input devices, and voice recognition software.</td>
   </tr>
   <tr>
-    <td>Browser Extensions</td>
-    <td>Add-ons or plugins that extend the functionality of a web browser. These could alter the appearance of web content, block advertisements, or add additional features to a webpage.</td>
+    <td>Browser Extension</td>
+    <td>An add-on or plugin that extends the functionality of a web browser. Could alter the appearance of web content, block advertisements, or add additional features to a webpage. Includes mashup tools or web services that combine content from more than one source into a single integrated experience. These can greatly modify the original content and how it is presented to the user.</td>
   </tr>
   <tr>
-    <td>OS and Software Applications</td>
-    <td>Programs or groups of programs designed for end users, running on the local operating system. Applications can vary drastically in purpose, from productivity apps to entertainment apps, and can influence how digital content is accessed and interacted with.</td>
+    <td>OS or Software Application</td>
+    <td>A program or group of programs running on the local operating system. Applications can vary drastically in purpose, from productivity apps to entertainment apps, and can influence how digital content is accessed and interacted with.</td>
   </tr>
   <tr>
-    <td>Video/Audio Systems</td>
+    <td>Video/Audio System</td>
     <td>Hardware and software components that control the output of video and sound.</td>
   </tr>
   <tr>
-    <td>CDN Caching</td>
-    <td>Content Delivery Networks (CDNs) store copies of web content in various locations around the world to reduce the physical distance between the server and the user, improving site performance. The CDN caching can affect the delivery and updating of digital content.</td>
-  </tr>
-  <tr>
-    <td>Mashup Tools</td>
-    <td>Software tools or web services that combine content from more than one source into a single integrated experience. These can greatly modify the original content and how it is presented to the user.</td>
+    <td>Content Delivery Network</td>
+    <td>Store copies of web content in various locations around the world to reduce the physical distance between the server and the user, improving site performance. This intermediary, typically invisilbe to the end user, plays a critical role in delivery and updating of digital content, as well as authenticating users.</td>
   </tr>
 </table>
 
 
-<p>This two-point digital communication model is not a one-way street, but a dynamic interaction. Feedback from end users can influence and improve the content generated by providers, while content providers continuously adapt their strategies based on user behavior and needs. The feedback loops become more complex as edge technologies come into play, adding another layer of adaptability and personalization to the model.
-
+<p>This two-poled digital communication model is not a one-way broadcast, but a dynamic conversation. Feedback from end users can influence and improve the content generated by providers, while content providers continuously adapt their strategies based on user behavior and needs. The feedback loops become more complex as edge technologies come into play.
 
 		</section>
 		</section>
@@ -196,7 +179,8 @@ Content sites are inherently dynamic; they are assembled for the end-user in a m
 
 <p>
 
-The capabilities discussed in this section are (or should be) controlled by the user. These are accommodations that allow users to interact with content in the way that works best for them. Whatever a content provider may have published, a user's adaptations must take precedence for accessibility to be preserved. It is critical to recognize that the user of web content is the ultimate arbiter of how it should be presented. Or, to put it in other words: <q>The author proposes; but the user disposes.</q></p>
+The capabilities discussed in this section are (or should be) controlled by the user. These are accommodations that allow users to interact with content in the way that works best for them. Whatever a content provider may have published, a user&apos;
+s adaptations must take precedence for accessibility to be preserved. It is critical to recognize that the user of web content is the ultimate arbiter of how it should be presented. Or, to put it in other words: <q>The author proposes; but the user disposes.</q></p>
 
 <section id="uxproc">
 	<h2>Creating Accessible UX</h2>
@@ -247,7 +231,8 @@ Too often this capabilities is missing when <a href="autobgproc">Fully Automated
 <dd>Users tend to require the same types of accommodations across all sites and all content sources. Therefore, facilitating this capability in the source is likely the least useful place to locate it, because that would require the user to select the same enhancements time and again across the succession of sites visited and likely with different menu organization site to site. </dd>
 
 <dt>Trade-offs</dt>
-<dd>Many of the capabilities made available by user-triggered opt-ins are often also found in multiple places at the edge. For example, contrast adjustment is generally found  in operating system display settings, in browser and app user-agents (e.g. dark mode/light mode), and in browser extensions, and in javascripted (CDN hosted) overlays. Such redundancy can easily lead to confusion. This confusion may be further exacerbated because certain settings the user finds helpful may be available only in one of these locations, and not in all of them. Furthermore, users are frequently not particularly knowledgeable about their operating system settings menus, especially as these tend to move with each OS revision (to take one example). This can make it difficult to locate these features, especially when we recognize that once satisfactorily configured they are generally not reset (meaning that the user doesn't need to revisit that menu location and soon forgets where it is). On the other hand, locating the accommodation consistently proximate to the user offers the highest likelihood of maximal benefit provided  the accommodation  can be easily identified and invoked. This also provides the best opportunity for easing the burden of invoking the same accommodation across a user&apos;s multiple devices.</dd>
+<dd>Many of the capabilities made available by user-triggered opt-ins are often also found in multiple places at the edge. For example, contrast adjustment is generally found  in operating system display settings, in browser and app user-agents (e.g. dark mode/light mode), and in browser extensions, and in javascripted (CDN hosted) overlays. Such redundancy can easily lead to confusion. This confusion may be further exacerbated because certain settings the user finds helpful may be available only in one of these locations, and not in all of them. Furthermore, users are frequently not particularly knowledgeable about their operating system settings menus, especially as these tend to move with each OS revision (to take one example). This can make it difficult to locate these features, especially when we recognize that once satisfactorily configured they are generally not reset (meaning that the user doesn&apos;
+t need to revisit that menu location and soon forgets where it is). On the other hand, locating the accommodation consistently proximate to the user offers the highest likelihood of maximal benefit provided  the accommodation  can be easily identified and invoked. This also provides the best opportunity for easing the burden of invoking the same accommodation across a user&apos;s multiple devices.</dd>
 
 <dt>Benefit</dt>
 <dd>Users can select and optimally tune the types of accommodations that they require. Any device on the edge may also have knowledge of other devices on the edge, that may need the same adjustments, and edge technology could propagate these settings to those other devices. MacOS Ventura (MacOS 13.2) is already doing this for wifi passwords when an IOS device configured for the same network is proximate.</dd>
@@ -268,7 +253,8 @@ On the other hand it seems equally unlikely that edge technology alone can fully
 </dd>
 <dt>Trade-offs</dt>
 <dd>What a user may want or need to know in any given situation or moment is a complex calculation at best. 
-	It's far too easy to overdo notifications, though failing to notify judiciously and appropriately would constitute a major technological opportunity missed. 
+	It&apos;
+s far too easy to overdo notifications, though failing to notify judiciously and appropriately would constitute a major technological opportunity missed. 
 	We need better models and privacy-preserving context awareness to realize all the benefits conceivable in this application of automated opportunities.</dd>
 <dt>Benefit</dt>
 <dd>Controlling the fire hose of notifications is best filtered and managed at the edge because that&apos;s the most data rich locus for technology mediated adaptation and minimal data round-trips to servers.
@@ -278,11 +264,10 @@ On the other hand it seems equally unlikely that edge technology alone can fully
 
 </section>
 <section id="portable">
-<h3>cross-Device Preference Profiles</h3>
+<h3>Configure Once, Use Everywhere</h3>
 
 <p>Users now frequently use several devices. Furthermore, users tend to have the same or very similar accessibility requirements regardless of the device they may be using in the moment. 
-	It is therefore an emerging goal in web accommodations to support the user in configuring once and having their configured preference propagate across all their devices. 
-	This propagation should ideally function across all vendors and operating environments.</p>
+	It is therefore an emerging goal in web accommodations to support the user in configuring once and having their configured preference propagate across all their devices. Such a cross-Device preference profile should ideally function across all vendors and operating environments.</p>
 
 <dl>
 <dt>Source</dt>
@@ -323,7 +308,7 @@ While this capability remains aspirational in the main as of this writing, it is
 <dl>
 <dt>Source</dt>
 <dd>
-It has long been agreed that published content should contain structural markup as provided by HTML and explained by wCAG. Not only is this critical for accessibility, additional processing to further tailor content presentation to particular user needs will rely on proper structural markup, preferably provided by source content.
+It has long been agreed that published content should contain structural markup as provided by HTML and explained by WCAG. Not only is this critical for accessibility, additional processing to further tailor content presentation to particular user needs will rely on proper structural markup, preferably provided by source content.
 </dd>
 <dt>Trade-offs</dt>
 <dd>
@@ -369,31 +354,51 @@ It has long been agreed that published content should contain structural markup 
 
 </section>
 
+<section id="structnav">
+	<h3>Semantic Navigation</h3>
+
+	<p>The ability to navigate pages by semantics alone such as headings, buttons, links. Screen readers, primarily used by blind users, offer this feature.
+
+<dl>
+<dt>Source</dt>
+<dd>
+	The means of navigation is not offered by source. 
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	This additional navigation aide would not block or hinder other types of access; the only trade-off could be confusion of having an excessive number of choices. Having a sheer volume of options can be mentally exhausting to some. 
+</dd>
+<dt>Benefit</dt>
+<dd>The "curb cut effect" is used to describe a situation where accommodations made to assist people with disabilities end up benefiting everyone. The ability to browse pages by structural semantic features such as headings, links, or buttons promises to allow users to quickly move between different sections or elements of a web page without the need to visually scan the entire page. This can save time, especially on long and complex pages with lots of content. By using semantic navigation options like headings or links, sighted users can easily jump to specific sections or pieces of content they are interested in. This can be particularly helpful when users are looking for specific information or trying to locate a particular topic on a page. 
+	<p>Some users rely on keyboard navigation alone, such as those with motor disabilities or certain types of visual impairments. Semantic navigation options provide a convenient way for keyboard users to move through the content without having to rely on mouse-based interactions, making the website more accessible and usable for them.
+</dd>
+</dl>
+
 <section id="FormLabel">
 <h3>Form Labels</h3>
 
 		<p>Forms are the fundamental interface of the interactive web. Programmatic labels for each data entry field or option selecting widget  on any form are critical for many users requiring accessibility support. Furthermore, consistent grouping and form controls on screen location is also critical.</p>
 
-<dl>
-<dt>Source</dt>
-<dd>
-Far too many sites fail to use available markup to associate date entry fields and status selection control widgets with the labels the print to screen. These sites expect non-disabled users will simply understand what label applies to what field and widget by virtue of how the two are printed to screen. The user who relies on programmatic association is thus disadvantaged.
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-	Clearly source should be performing this function. That fact that it is missing from so many sites cries out for remediation technology on the edge. Furthermore, advanced strategies to sequence completion of complex forms for persons who are easily overwhelmed by on screen complexity are frustrated when these programmatic associations are missing.
-</dd>
-<dt>Benefit</dt>
-<dd>
-Well built edge technologies can introduce missing programmatic associations. Furthermore, they are the only technologies that can bring consistent organization to a form.
-</dd>
+		<dl>
+		<dt>Source</dt>
+		<dd>
+		Far too many sites fail to use available markup to associate date entry fields and status selection control widgets with the labels the print to screen. These sites expect non-disabled users will simply understand what label applies to what field and widget by virtue of how the two are printed to screen. The user who relies on programmatic association is thus disadvantaged. The problem is amplified by the use and re-use of frameworks and low code forms that lack this support.
+		</dd>
+		<dt>Trade-offs</dt>
+		<dd>
+			Clearly source should be performing this function. That fact that it is missing from so many sites cries out for remediation technology on the edge. 
+		</dd>
+		<dt>Benefit</dt>
+		<dd>
+		Well built edge technologies can introduce missing programmatic associations. Advanced strategies to sequence completion of complex forms for persons who are easily overwhelmed by on screen complexity are frustrated when these programmatic associations are missing. Furthermore, they are the only technologies that can bring consistent organization to a form. 
+		</dd>
 
-<dt class="rt">Related Topics</dt>
-<dd class="rt">
-	This pervasive problem in interactive content today is also related to <a href="#structnorm">Normalize the Structural Composite</a> overlay edge capability described above.
-</dd>
+		<dt class="rt">Related Topics</dt>
+		<dd class="rt">
+			This pervasive problem in interactive content today is also related to <a href="#structnorm">Normalize the Structural Composite</a> overlay edge capability described above.
+		</dd>
 
-</dl>
+		</dl>
 
 </section>
 <section id="linkviz">
@@ -406,11 +411,13 @@ to help users identify the hyperlinks on a page more easily. </p>
 <dl>
 <dt>Source</dt>
 <dd>
-By definition this capability is needed because source (as rendered by the browser) isn't sufficiently clear about its hyperlinks, at least for significant user segments.
+By definition this capability is needed because source (as rendered by the browser) isn&apos;t sufficiently clear about its hyperlinks, 
+at least for significant user segments.
 </dd>
 <dt>Trade-offs</dt>
 <dd>
-	Users requiring this accommodation will most likely require it across all sites they visit. While configuring a browser for greater clarity helps, users shouldn't have to configure the same capability across their multiple devices.
+	Users requiring this accommodation will most likely require it across all sites they visit. While configuring a browser for greater clarity helps, users shouldn&apos;
+t have to configure the same capability across their multiple devices.
 </dd>
 
 <dt>Benefit</dt>
@@ -435,7 +442,7 @@ accessible edge technologies.
 	<p>Some users require picsel-level RGB transformations to comprehend and interact effectively with web content. This section groups those capabilities.</p>
 
 <section id="contrast">
-<h3>Optimizing Color Contrast</h3>
+<h3>Optimize Color Contrast</h3>
 
 <p>Color and contrast modifications such as <q>light mode</q>, <q>Dark mode</q>, Inverted Colors, Color Desaturation, and related contrast pigmentation adaptations have proven highly useful
 to many people with a wide range of visual impairments, and frankly for most users in various distinct situations. They modify the difference between the
@@ -484,7 +491,8 @@ An accessible overlay can provide this functionality across all sites the user a
 
 <section id="autoplay">
 <h3>Auto-play Videos </h3>
-<p>Some users are impeded when media begins playing on page load. Screen reader users may need playback paused until they've assured themselves they&apos;ve heard all the information their TTS can provide on any given page. Others will seek to enable captions (and possibly even automated language translation) before playback begins. It is also necessary to support a mute function which can be invoked by touch, mouse, keyboard, or other control mapped for such purposes.</p>
+<p>Some users are impeded when media begins playing on page load. Screen reader users may need playback paused until they&apos;
+ve assured themselves they&apos;ve heard all the information their TTS can provide on any given page. Others will seek to enable captions (and possibly even automated language translation) before playback begins. It is also necessary to support a mute function which can be invoked by touch, mouse, keyboard, or other control mapped for such purposes.</p>
 
 <dl>
 <dt>Source</dt>
@@ -614,9 +622,9 @@ accessible edge technologies.
 </section>
 
 <section id="textalign">
-<h3>Text Alignment</h3>
+<h3>Text Alignment Personalization</h3>
 
-<p>fully justified text blocks have long been standard in publishing, including in web content publishing. It is achieved by using variable width fonts and adjusting spacing between characters and words in the block of text. r this practice is not beneficial to all users. This capability allows individual users to determine for themselves the alignment best suited to their needs.</p>
+<p>Fully justified text blocks have long been standard in publishing, including in web content publishing. It is achieved by using variable width fonts and adjusting spacing between characters and words in the block of text. r this practice is not beneficial to all users. This capability allows individual users to determine for themselves the alignment best suited to their needs.</p>
 
 <dl>
 <dt>Source</dt>
@@ -708,7 +716,8 @@ accessible edge technologies.
 <section id="a11yfonts">
 <h3>Provide Accessible Fonts</h3>
 
-<p>Not all users are able to read any font a web content publisher may choose. This capability allows the publisher's content to be reformatted in a user chosen font the user is comfortable using</p>
+<p>Not all users are able to read any font a web content publisher may choose. This capability allows the publisher&apos;
+s content to be reformatted in a user chosen font the user is comfortable using</p>
 
 <dl>
 <dt>Source</dt>
@@ -750,7 +759,7 @@ increased baselines and thinner tops, and a larger x-height. </p>
 	<h2>Miscellaneous</h2>
 
 <section id="keybdnav">
-<h3>Keyboard Navigation</h3>
+<h3>Keyboard Navigation Enhancements</h3>
 
 <p>Enhance visual indicators that
 support keyboard navigation such as underlines or color changes; optionally
@@ -764,7 +773,8 @@ Some content publishers offer such transformations. Also, some operating systems
 </dd>
 <dt>Trade-offs</dt>
 <dd>
-	As noted some content publishers offer accessibility related page transformation overlays in their source. As also noted, the drawback with source provided transformations is that they must be applied over and over, site by site except when they're the result of functioning transformations enabled in the operating system of the device itself. However, when a user discovers different settings are useful for different sites, whether these are grossly distinct or highly nuanced distinctions, this may appear to argue for not interfering with user chosen settings on a site by site basis. On the other hand, an edge technology&mdash;especially one that is associated with a user login&mdash;can recognize the distinctions and apply heuristics to learn the nuances a user prefers, possibly enabling it to predict better what might be valuable on a newly visited site.
+	As noted some content publishers offer accessibility related page transformation overlays in their source. As also noted, the drawback with source provided transformations is that they must be applied over and over, site by site except when they&apos;
+re the result of functioning transformations enabled in the operating system of the device itself. However, when a user discovers different settings are useful for different sites, whether these are grossly distinct or highly nuanced distinctions, this may appear to argue for not interfering with user chosen settings on a site by site basis. On the other hand, an edge technology&mdash;especially one that is associated with a user login&mdash;can recognize the distinctions and apply heuristics to learn the nuances a user prefers, possibly enabling it to predict better what might be valuable on a newly visited site.
 </dd>
 <dt>Benefit</dt>
 <dd>
@@ -805,7 +815,7 @@ accessible edge technologies.
 </section>
 
 <section id="resetall">
-<h3>Reset All</h3>
+<h3>Reset All Personalizations</h3>
 
 <p>It is only smart business practice and simple courtesy to support a <q>one button click</q> feature to reset any user
 triggered enhancement and restore the page to its default state. It should be as easy as possible for users to try different settings and undo them readily. Similarly, it should be just as easy to undo any auto-applied transformations and return a page to the settings provided directly by source. Users should be empowered to adjudge for themselves whether any applied overlay transformation actually enhances their ability to interact&mdash;and to return the overlay enhancements should they discover they&apos;re actually enhancing their experience, contrary to initial doubt!</p>
@@ -867,7 +877,8 @@ accessible edge technologies.
 <section id="guardianship">
 <h3>Support Guardians and Caretakers</h3>
 
-<p>Whether in support of minor children or aging seniors, overlays that support end user appropriate configuration hosted in a cloud service and capable of propagating to all devices used by the beneficiary end user provide a very valuable service. They enable individuals legally entrusted with the end user's care to refine the configuration of web devices to maximal end user benefit. When facilitation is provided to minor children living with disabilities, it enables them to devote their time with devices to learning, socializing, and entertainment. When facilitated for aging seniors, the benefits are similar even though disability is usually unacknowledged until it becomes severe among this population. In both cases this capability shifts the burden of technological configuration away from the end user who is likely least able to accomplish it effectively for themselves and to an agent more likely capable of accomplishing the task effectively. Note we user the term <q>agent</q> in its formal sense. The agent might be a professional of some kind such as a teacher, a professional in a senior center,  or a specialist in technology for persons of specific types of disability. Equally, it could be a trusted friend or a family member assisting a child or an elder.</p>
+<p>Whether in support of minor children or aging seniors, overlays that support end user appropriate configuration hosted in a cloud service and capable of propagating to all devices used by the beneficiary end user provide a very valuable service. They enable individuals legally entrusted with the end user&apos;
+s care to refine the configuration of web devices to maximal end user benefit. When facilitation is provided to minor children living with disabilities, it enables them to devote their time with devices to learning, socializing, and entertainment. When facilitated for aging seniors, the benefits are similar even though disability is usually unacknowledged until it becomes severe among this population. In both cases this capability shifts the burden of technological configuration away from the end user who is likely least able to accomplish it effectively for themselves and to an agent more likely capable of accomplishing the task effectively. Note we user the term <q>agent</q> in its formal sense. The agent might be a professional of some kind such as a teacher, a professional in a senior center,  or a specialist in technology for persons of specific types of disability. Equally, it could be a trusted friend or a family member assisting a child or an elder.</p>
 
 <dl>
 <dt>Source</dt>
@@ -1050,142 +1061,210 @@ accessible edge technologies.
 <section id="custneeds">
 <h1>Meeting Content Provider&apos;s Needs</h1>
 
-<p>This section gathers capabilities whose accessibility is primarily controlled by the content provider.</p>
+<p>This section gathers capabilities primarily controlled by the content provider.</p>
 
-<p>An over-riding concern at the time of this writing is the need to conform with WCAG 2.1 AA success criteria,
-which leads to many items in this section reflecting that approach. 
-But this is just the start. Content Providers shape the key elements or features of their digital content in support of the intended user journey. 
-As stated above, this often relies on dynamic services supplied by third parties, many of which are added in an effort to further accommodate, 
-engage and please the end user. 
+<p>Content Providers shape the key elements or features of their digital content in order to support an intended user persona and journey. 
+As stated above this typically results in a highly interactive experience presented to the user, packed with services supplied by third parties, many of which are added in their efforts to further accommodate, 
+engage and please the end user while meeting regulatory requirements. 
 	
 <section id="autoai">
 	<h2>Leveraging Automation</h2>
 
+
+	<section id="knowledge">
+		<h3>Having Sufficient Knowledge & Skills</h3>
+
+		  <p>Accessibility is a complex subject, and approaches differ per role. Suitably trained designers, brand owners, marketing managers, software developers and quality assurance are difficult to hire and retain. </p> 
+			<dl>
+				<dt>Source</dt>
+				<dd>The most accessible organizations are those with a deep and robust culture around accessibility. Every role is aware and trained in the topic. In addition, persons with disabilities are involved as well. </dd>
+
+				<dt>Trade-offs</dt>
+				<dd>Offloading accessibility knowledge may mean the organization will never reach the attitude and approach expected as a low bar of accessibility: including people with disabilites.  </dd>
+
+				<dt>Benefit</dt>
+				<dd>Like any complex topic, organizations are wide to hire experts and give them the latitude to fix things. Since providing access to digital assets at source is a security risk, allowing the accessibility provider to fix things at the edge is a sound decision. </dd>
+
+				<dt>Related Topics</dt>
+				<dd class="rt">
+					Knowledge and skills are a primary driver behind <a href="#3rd-party"><q>My Site, Their Service</q></a>.</dd>
+			</dl>
+	</section>
+
+	<section id="3rd-party">
+		<h3>My Site, Their Service</h3>
+
+		  <p>Third party services not hosted by the Content Provider, providing services in support of the Content Provider's value proposition. Typically invoked by JavaScript or the Content Delivery Network, they meet the planned needs of end users. </p> 
+			<dl>
+				<dt>Source</dt>
+				<dd>They typical website today is a platform for interaction, a space where an organization meets its customers. End users expect a broad range of services that are likely outside the core competency of the site owner. A company cannot become jack-of-all-trades and master of none. Build or buy decisions, when executed well, can mean the difference between success of failure for a business. Just as most companies don't build the buildings they inhabit or the elevators that operate within, they do not program the intricate digital services required on their websites such as GDPR cookie handling, chatbots, or shopping carts. Procurement can request accessibility conformance statements from services as a gating decision point to include them on the page or not. </dd>
+
+				<dt>Trade-offs</dt>
+				<dd>Companies relinquish some control when they host functions via third parties. But their responsibility is to verify the accessibility of these services. </dd>
+
+				<dt>Benefit</dt>
+				<dd>Given the bewildering range of possible experiences with all these third party plugins operating, the edge becomes the only place where a proper validation can occur.</dd>
+
+				<dt>Related Topics</dt>
+				<dd class="rt">
+					This is closely related to <q>Having Knowledge and Skills</q> and <q>Only The Edge Knows For Sure</q>.</dd>
+			</dl>
+	</section>
+
+
+<section id="onlyedgeknows">
+		<h3>Only The Edge Knows For Sure</h3>
+
+		  <p>While some rare web pages serve up a single experience like a short order cook handing over a burger, most are like the food court at a shopping mall with many independent services rallying to the end user&apos;s needs. Content providers pack their pages with services such as cookie permissions, chat, payment gateways, user-generated reviews, and most prolifically advertisements. 
+			<dl>
+				<dt>Source</dt>
+				<dd>Content providers can only guess at an end user&apos;s experience by testing well chosen scenarios. Large organizations may arrange focus groups that give a glimpse of a few users, at one moment in time. But in the end, almost by definition, the source cannot know. </dd>
+
+				<dt>Trade-offs</dt>
+				<dd>Persons with disabilities tend to be concerned about content
+						providers discovering and monetizing user data. 
+						Their lived reality has made
+						them highly desirous to preserve their privacy 
+						because of perceived and actual
+						experience of discrimination over many years. Privacy assurances, along with steep privacy violation fines, can build trust over time, such as that supporting the nearly ubiquitous use of Google Analytics at the edge.</dd>
+
+					<dt>Benefit</dt>
+					<dd>Sampling and monitoring the accessibility of the user experience can only occur at the moment of user access because only the edge knows for sure. Much as a thermostat should be positioned far from the heat source, to measure the temperature of the room, monitoring at the edge is the only way to determine what is happening there. </dd>
+
+					<dt>Related Topics</dt>
+					<dd class="rt">
+					TBD</dd>
+
+			</dl>
+	</section>
+
 	<section id="autobgproc">
 		<h3>Fully Automated Transformations</h3>
 
-		        <p>Sometimes automated transformations are applied based on conditions edge technology discovers in the user&apos;s technology.
+		  <p>Automated transformations applied based on conditions edge technology discovers in the user&apos;s technology.
 			</p>
 
 			<dl>
 				<dt>Source</dt>
-				<dd>Content providers have long sought to tailor UX behavior based on what capabilities could be discovered about the user&apos;s operating environment. What browser is in use? Is a screen reader in use? Indeed, <a
+				<dd>Content providers have long sought to tailor UX behavior based on what capabilities could be discovered about the user&apos;s operating environment. What browser is in use? Desktop, mobile or smart watch? Is a screen reader in use? Indeed, <a
 						href="https://www.w3.org/TR/turingtest/#recap3">Google&apos;s automated Recaptcha 3 is deeply dependent on just such data gathering</a>.
 				</dd>
 
 				<dt>Trade-offs</dt>
 				<dd>While a well-crafted remediation
-					        technology may disappear from users&apos; consciousness, it is both
+					  technology may be invisible to users, it is both
 						risky and presumptuous to presume there will be no users who will not
-						experience some kind of accessibility challenge even among the best crafted remediation technologies.
-						Furthermore, persons with disabilities tend to be  concerned about content
-						providers discovering and monetizing  user data. Their lived reality has made
-						them highly desirous to preserve their privacy because of perceived and actual
-						experience of discrimination over many years.
-						        However, the automated UX transformation approach can provide clear benefits. One example is  real-time applications such as <a href="https://www.w3.org/TR/raur/">Real Time Communications (RTC)</a>.
-							        Immediacy matters. ASR captions may not provide the desired quality, but the alternative may too often be no captions whatsoever.
-								        Similarly missing image descriptions generated by A-I may prove more helpful to the user coping with a substandard page than no alternative text at all.
-									        Pages whose content remains unremediated can also tend to encourage users to seek alternative providers.
-										        </dd>
+						experience some kind of accessibility challenge even among the best crafted remediation technologies. Matters are made worse when the user is left uninformed and feels a loss of agency. 
+		        </dd>
 
-											<dt>Benefit</dt>
-											<dd>Users do indeed expect their technologies will operate automatically and seamlessly to provide an accessible and functional experience. This is an accepted technological expectation. Content providers do not err in
-												attempting to meet this expectation. The error arises from leaving the user out of the decision loop.</dd>
+							<dt>Benefit</dt>
+							<dd>Users do indeed expect their technologies will operate automatically and seamlessly to provide an accessible and functional experience. This is an accepted technological expectation. Content providers do not err in
+								attempting to meet this expectation. 
+								An automated UX transformation approach can provide clear benefits. One example is real-time applications such as <a href="https://www.w3.org/TR/raur/">Real Time Communications (RTC)</a>.
+			        Immediacy matters. Automated captions may not provide the desired quality, but the alternative may too often be no captions whatsoever.
+				        Similarly missing image descriptions generated by A-I may prove more helpful to the user coping with a substandard page than no alternative text at all.
+					        Pages whose content remains unremediated can also tend to encourage users to seek alternative providers.
 
-											<dt>Related Topics</dt>
-											<dd class="rt">
-We emphasize the critical importance of preserving <a href="usrctrl">Preserving User Agency</a> creating fully automated transformations.
-											</dd>
+						</dd>
+
+							<dt>Related Topics</dt>
+							<dd class="rt">
+							Keep in mind that <a href="onlyedgeknows">Only The Edge Knows For Sure</a>. We emphasize the critical importance of <a href="usrctrl">Preserving User Agency</a> in fully automated transformations.
+							</dd>
 
 			</dl>
 	</section>
 	 
-<section id="autoWCAG">
-<h3>Automated Detection of WCAG Violations</h3>
+	<section id="autoWCAG">
+	<h3>Automated Detection of WCAG Violations</h3>
 
-<p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
-	Large, complex and highly dynamic source sites are literally unable to reproduce every user experience permutation in their test beds. Automated detection and 
-	reporting can help bridge this gap. 
-	There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here..</p>
-<dl>
-<dt>Source</dt>
-<dd>
-If source got this right (as WCAG 2.x seems to expect), we wouldn't have a need for this capability.
-</dd>
-<dt>Trade-offs</dt>
-<dd>In-browser scanners and online scanners are used to detect WCAG violations. 
-	This is the business model for many companies. 
-	False positives, false negatives, certainty and confidence scores are well-known factors affecting the success and usefulness of this approach. 
-	It is unfortunate when such violations remain unremediated in source content, but sometimes this can&apos;t be helped. 
-	An indication of violations at the edge, however rough, is better than none.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	Automated detection is useful in-and-of-itself. 
-	Something is most often better than nothing, especially in the moment. 
-	It looms ever larger as it stacks, and automated detection is often the first step in a chain of capabilities.
-</dd>
+			<p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
+				There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here.</p>
+			<dl>
+			<dt>Source</dt>
+			<dd>
+			If source got this right (as WCAG 2.x seems to expect), we wouldn&apos;t have a need for this capability.
+			</dd>
+			<dt>Trade-offs</dt>
+			<dd>In-browser scanners and online scanners are used to detect WCAG violations. 
+				This is the business model for many companies. 
+				False positives, false negatives, certainty and confidence scores are well-known factors affecting the success and usefulness of this approach. 
+				It is unfortunate when such violations remain unremediated in source content, but sometimes this can&apos;t be helped. 
+				An indication of violations at the edge, however rough, is better than none.
+			</dd>
+			<dt>Benefit</dt>
+			<dd>
+				Large, complex and highly dynamic source sites are literally unable to reproduce every user experience permutation in their test beds. Automated detection and 
+				reporting can help bridge this gap. 
+				Something is most often better than nothing, especially in the moment. 
+				It looms ever larger as it stacks, and automated detection is often the first step in a chain of capabilities.
+			</dd>
+
+					<dt>Related Topics</dt>
+					<dd class="rt">
+					Keep in mind that <a href="knowledge">Having Knowledge and Skills</a>, as well as <a href="#onlyedgeknows">Only The Edge Knows For Sure</a> and . </dd>
+
 </dl>
 
 </section>
 
 <section id="HIT">
-<h3>Human Mediated vs Fully automated remediation</h3>
+<h3>Human Mediated Automated Remediation</h3>
 
-<p>While not the glamorous <q>holy grail</q> of technology deployment today, human mediation of A-I identified checkpoints, together with the site owner&apos;s active participation to clarify meaning and intent describes the most effective approach available today to accomplish accessibility remediations where they're needed. No other approach delivers equally effective remediations.
-</p>
+		<p>While not the glamorous <q>holy grail</q> of technology deployment today, human mediation of A-I identified checkpoints, together with the site owner&apos;s active participation to clarify meaning and intent, describes an effective approach to accomplish accessibility remediations where they&apos;re needed. No other approach delivers equally effective remediations at such scale.
+		</p>
 
-<dl>
-<dt>Source</dt>
-<dd>
-	This is a process approach just as meaningful for remediating accessibility violations in source as it is for creating in-process remediations.
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-	It is clearly preferable to remediate violations in source content whenever doing so is feasible. An in-process corrective overlay remediations only make sense when there are good reasons why the source cannot be remediated. To argue any form of <q>should</q> concerning where a remediation is accomplished actually describes a theology of accessibility, not a technological solution delivering real benefits to users.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	The user always benefits when best available remediation approaches are employed. Nor will the user ever care where and how the remediation is accomplished as long as it facilitates the user&apos; s ability to function.
-</dd>
-</dl>
+		<dl>
+		<dt>Source</dt>
+		<dd>
+			This is a process approach just as meaningful for remediating accessibility violations in source as it is for remediating at the edge. Though to argue any remediation <strong>not</strong> done at source or <strong>not</strong> performed by a human, may describe a theology of accessibility, not a technological solution delivering real benefits to users.
+		</dd>
+		<dt>Trade-offs</dt>
+		<dd>
+			It is clearly preferable to remediate violations in source content whenever doing so is feasible. An in-process corrective overlay remediations only make sense when there are good reasons why the source cannot be remediated. 
+		</dd>
+		<dt>Benefit</dt>
+		<dd>
+			The user always benefits when best available remediation approaches are employed. Nor will the user ever care where and how the remediation is accomplished as long as it facilitates the user&apos; s ability to function.
+		</dd>
+		</dl>
 
 </section>
 
 <section id="a11yedit">
-<h3>Accessibility editing, by site owner</h3>
+<h3>Accessibility Editing, By Site Owner</h3>
 
-<p>This capability describes an interface in the overlay,
-available to authorized users, facilitating assisted, manual editing of source code that affects
-accessibility, e.g. alt tags for images, or ARIA labels.</p>
+		<p>This capability describes an interface in the overlay,
+		available to authorized users, facilitating manual editing of source code that affects
+		accessibility, e.g. alt tags for images, or ARIA labels, often with the assistance of linting, wizards and supplemental materials.</p>
 
-<dl>
-<dt>Source</dt>
-<dd>
-	Where the source lacks sufficient accessibility supporting markup, this capability provides both analytics and remediation access to properly authenticated 
-persons empowered to perform remediation. Note the assumption is that, for whatever reason, the content technology provided by the hosting environment lacks adequate accessibility supporting technology.
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-This is not  a redundant capability. Rather, it is an innovation only available from edge technology. Equivalent technology in source would require the site publisher to establish a complete panoply of content management tooling. While this is certainly feasible, not everyone wishing to make content available on line desires to spend time gaining proficiency with content management systems. On the other hand a properly configured content hosting environment may indeed accomplish accessible content publication. This capability exists to assist sites who fail accessibility, usually for a complex set of reasons where source remediation is expensive or otherwise not readily achievable.
-The capability is unique to overlays of this type. It provides an alternative to standard methods of
-coding the site, either via source code, web platform templates/CSS
-adjustments, etc.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	This capability facilitates adding missing accessibility supporting markup to source content.
-</dd>
-<dt class="rt">Related Topics</dt>
-<dd class="rt">
-This editing typically requires
-accessibility expertise, but the content publisher&apos;s expertise, and the site&apos;s content may actually represent an entirely different area of content expertise..
-</dd>
-</dl>
+		<dl>
+		<dt>Source</dt>
+		<dd>
+			Where the source lacks sufficient accessibility supporting markup, this capability provides both analytics and remediation access to properly authenticated 
+		persons empowered to perform remediation. Note the assumption is that, for whatever reason, the content technology provided by the hosting environment lacks adequate accessibility supporting technology.
+		</dd>
+		<dt>Trade-offs</dt>
+		<dd>
+		A properly configured content hosting environment should be able to accomplish accessible content publication. Such editing performed at the edge depends on robust IDs, and can be more brittle than changes at source.
+		</dd>
+		<dt>Benefit</dt>
+		<dd>
+			This capability facilitates adding missing accessibility supporting markup to source content. It is unique to overlays of this type, providing an alternative to standard methods of
+			coding the site, either via source code, web platform templates/CSS
+			adjustments, etc. This capability exists to assist sites who fail accessibility, usually for a complex set of reasons where source remediation is expensive or otherwise not readily achievable.
+			This is not  a redundant capability. Rather, it is an innovation only available from edge technology. Equivalent technology in source would require the site publisher to establish a complete panoply of content management tooling. While this is certainly feasible, not everyone wishing to make content available on line desires to spend time gaining proficiency with content management systems. 
+		</dd>
+		<dt class="rt">Related Topics</dt>
+		<dd class="rt">
+		This editing typically requires
+		accessibility expertise, but the content publisher&apos;s expertise, and the site&apos;s content may actually represent an entirely different area of content expertise..
+		</dd>
+		</dl>
 
 </section>
 <section id="a11yedit3rd">
-<h3>Accessibility editing, by 3rd party</h3>
+<h3>Accessibility Editing, By 3rd Party</h3>
 
 <p>This capability functions very much like the <a href="#a11yedit">Accessibility editing, by site owner</a> immediately above, except that a third party accessibility coding expert is granted access to perform needed remediations.</p>
 
@@ -1257,7 +1336,7 @@ Some browser extensions support A-I based alternative text remediation. However,
 </section>
 
 <section id="tooltip">
-<h3>Tooltips</h3>
+<h3>Tooltip Provisioning</h3>
 
 <p>This capability supplies a small pop-up window that appears
 on hover to display additional information about an element on the page for users who benefit from enhanced
@@ -1279,7 +1358,7 @@ contextualization or clarification.</p>
 </section>
 
 <section id="dictionary">
-<h3>Dictionary</h3>
+<h3>Dictionary On Demand</h3>
 
 <p>This capability provides definitions of words or
 phrases that may be unfamiliar to some users; provides pronunciation guidance;
@@ -1303,7 +1382,7 @@ better comprehend the content.</p>
  
 </section>
 <section id="formvalid">
-<h3>Form Validation </h3>
+<h3>Form Validation Improvement</h3>
 
 <p>This capability ensures that screen reader users
 and other users requiring enhanced status support receive clear feedback on the status of a form being completed 
@@ -1336,7 +1415,7 @@ It also provides feedback on the status of the element and on any status changes
 <dl>
 <dt>Source</dt>
 <dd>
-While source content is expected to provide the same clarity, remediating it to do so isn't always immediately feasible.
+While source content is expected to provide the same clarity, remediating it to do so isn&apos;t always immediately feasible.
 </dd>
 <dt>Trade-offs</dt>
 <dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where source is demonstrably less informative than needed for functional accessibility support.</dd>
@@ -1349,7 +1428,7 @@ While source content is expected to provide the same clarity, remediating it to 
 </section>
 
 <section id="externallinks">
-<h3>External Link Targets</h3>
+<h3>External Link Target Notification</h3>
 
 <p>This capability:</p>
 
@@ -1362,7 +1441,7 @@ While source content is expected to provide the same clarity, remediating it to 
 <dl>
 <dt>Source</dt>
 <dd>
-While source content is expected to maintain viable hyperlinks and provide the same clarity about their status, remediating it to do so isn't always immediately feasible.
+While source content is expected to maintain viable hyperlinks and provide the same clarity about their status, remediating it to do so isn&apos;t always immediately feasible.
 </dd>
 <dt>Trade-offs</dt>
 <dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where source is demonstrably less informative than needed for functional accessibility support.</dd>
@@ -1374,7 +1453,7 @@ While source content is expected to maintain viable hyperlinks and provide the s
 
 </section>
 <section id="ambiglink">
-<h3>Ambiguous Links</h3>
+<h3>Ambiguous Link Notification</h3>
 
 <p>This capability Provides descriptive and meaningful
 link text that accurately reflects the purpose or destination of the link when the source content fails to do so.
@@ -1384,7 +1463,7 @@ This is particularly needed for link text such as <q>click here</q> or
 <dl>
 <dt>Source</dt>
 <dd>
-	While source content is expected to maintain viable hyperlinks and provide the same clarity about their status, remediating it to do so isn't always immediately feasible. <q>Click here</q> and <q>more</q> link text is far too common and rarely sufficiently unambiguous.
+	While source content is expected to maintain viable hyperlinks and provide the same clarity about their status, remediating it to do so isn&apos;t always immediately feasible. <q>Click here</q> and <q>more</q> link text is far too common and rarely sufficiently unambiguous.
 </dd>
 <dt>Trade-offs</dt>
 <dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where source is demonstrably less informative than needed for functional accessibility support.</dd>
@@ -1397,14 +1476,14 @@ This is particularly needed for link text such as <q>click here</q> or
 </section>
 
 <section id="videocaption">
-<h3>Video Captioning Capabilities</h3>
+<h3>Video Captioning</h3>
 
 <p>This capability provides caption text displaying along with
 video and synchronized with it.</p>
 
 </section>
 <section id="title">
-<h3>Missing Titles </h3>
+<h3>Missing Title Provisioning </h3>
 
 <p>This capability provides for meaningful titles, for pages and/or
 iFrames within pages, and provides screen reader users a more efficient and meaningful browsing experience.</p>
@@ -1412,7 +1491,7 @@ iFrames within pages, and provides screen reader users a more efficient and mean
 </section>
 
 <section id="lang">
-<h3>Site Language </h3>
+<h3>Site Language Indication</h3>
 
 <p>This capability correctly specifies the primary language of a
 web page when the declaration is incorrect or missing entirely.</p>
@@ -1456,7 +1535,7 @@ into a language selected by the user.</p>
 	<h2>User Feedback Support</h2>
 
 <section id="a11ystmnt">
-<h3>Accessibility Statement</h3>
+<h3>Accessibility Statement Availability</h3>
 
 <p>Providing an easily located Accessibility Statement has become a widely accepted best practice in the industry. While there is no consensus on what all should be included, it is generally agreed that the formal Statement should define the site&apos;s commitment to accessibility of its content and services. Additional content, such as accessibility specific contact data, and accessibility specific help resources are also frequently included.
 </p>
@@ -1464,7 +1543,7 @@ into a language selected by the user.</p>
 <dl>
 <dt>Source</dt>
 <dd>
-	It is currently a best practice to link to the Accessibility Statement (and related resources) from the site's footer.
+	It is currently a best practice to link to the Accessibility Statement (and related resources) from the site&apos;s footer.
 </dd>
 <dt>Trade-offs</dt>
 <dd>
@@ -1478,7 +1557,7 @@ into a language selected by the user.</p>
 
 </section>
 <section id="a11yprov">
-<h3>Identify the Accessibility provider</h3>
+<h3>Accessibility Provider Identification</h3>
 
 <p>This capability display to website users the name
 (and perhaps the logo) of the primary accessibility provider, who stands behind the accessibility of
@@ -1502,7 +1581,7 @@ statement.</p>
 </section>
 
 <section id="reporting">
-<h3>Accessibility issue reporting</h3>
+<h3>Accessibility Issue Reporting</h3>
 
 <p>This capability provides a form, or an email link, enabling
 end-users the ability to report barriers they&apos;ve experienced on a site. Accessibility-specific reporting is an industry best practice.</p>
