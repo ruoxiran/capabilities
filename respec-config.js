@@ -45,6 +45,20 @@ var respecConfig = {
 		}
 ],
 	
+	    authors:[{
+		        name: "Janina Sajka",
+		        URL: "https://linkedin.com/in/jsajka",
+		        mailto: "janina@rednote.net",
+		        w3cid: 33688
+		    },
+		    {
+			        name: "Lionel Wolberger",
+				        company: "Userway",
+				        companyURL: "https://userway.org/",
+				        mailto: "lionel@userway.org",
+				        w3cid: 106386
+			    }],
+
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
 	// name of the WG
