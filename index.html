@@ -490,13 +490,12 @@ dyslexia. Typically, they have more distinctive symbols in order to  avoid confu
 increased baselines and thinner tops, and a larger x-height. </p>
 
 </section>
+</section>
 
 <section id="margins">
-<h3>Margin Management
-</h3>
+<h2>Margin Management
+</h2>
 
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
-</section>
  
 <section id="indent">
 <h3>
@@ -526,7 +525,6 @@ Paragraph Indentation
 	Only edge technology is capable of performing this accommodation across all sites a user accesses.
 </dd>
 
-
 <dt>Automatability</dt>
 <dd>
 Placeholder pending content
@@ -541,74 +539,6 @@ accessible edge technologies.
  
 </dl>
  
-</section>
-
-<section id="dropcap">
-<h3>Drop Cap Implementation
-</h3>
-
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
-</section>
- 
-<section id="ulol">
-<h3>Bulleted and Numbered Lists
-</h3>
-
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
-</section>
-
-<section id="textbox">
-<h3>Text Box Framing
-</h3>
-
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
-</section>
- 
-<section id="shadowout">
-<h3>Shadow and Outline Effects
-</h3>
-
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
-</section>
- 
-<section id="transpcont">
-<h3>Text Transparency Control</h3>
-
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
-</section>
- 
-<section id="textinteract">
-<h3>Interactive Text Elements
-</h3>
-
-<p><strong>EDITOR'S NOTE</strong><br t a/> Section content yet to be written.</p>
-</section>
-
-<section id="keybdnav">
-
-<h3>Keyboard Navigation Enhancements</h3>
-
-<p>Enhance visual indicators that
-support keyboard navigation such as underlines or color changes; optionally
-provide other assistance such as mapping interactive elements to keyboard
-shortcuts. </p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-Some content publishers offer such transformations. Also, some operating systems provide such features which should not be overwritten by browser technology, generally speaking. 
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-	As noted some content publishers offer accessibility related page transformation overlays in their source. As also noted, the drawback with source provided transformations is that they must be applied over and over, site by site except when they&apos;
-re the result of functioning transformations enabled in the operating system of the device itself. However, when a user discovers different settings are useful for different sites, whether these are grossly distinct or highly nuanced distinctions, this may appear to argue for not interfering with user chosen settings on a site by site basis. On the other hand, an edge technology&mdash;especially one that is associated with a user login&mdash;can recognize the distinctions and apply heuristics to learn the nuances a user prefers, possibly enabling it to predict better what might be valuable on a newly visited site.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	The benefit available only from edge-based transformations is that they can be applied to every site the user visits to achieve consistent results when nuanced results are required.
-</dd>
-</dl>
-
 </section>
 </section>
 
@@ -807,129 +737,13 @@ accessible edge technologies.
 </section>
 
 <section id="interact">
-<h1>Functional
+<h1>Functionality
 </h1>
 
 <p>
 
-The capabilities discussed in this section are those required in order to interact with <a href="manage">published content and web services</a>. These are the capabilities described by the fundamentalWCAG principle: <a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility"><q>operable</q></a>.
+The capabilities discussed in this section are those content publishers must provide users in order to facilitate accessible user interaction with <a href="manage">published content and web services</a>. These are the capabilities described by the fundamentalWCAG principle: <a href="https://www.w3.org/WAI/WCAG21/Understanding/intro#understanding-the-four-principles-of-accessibility"><q>operable</q></a>.
 </p>
-
-<section id="XX">
-	<h2>XX</h2>Navigation
-
-</section>
-
-<section id="XX">
-	<h2>XX</h2>Client-Side interactions
-
-</section>
-
-<section id="XX">
-	<h2>XX</h2>forms
-<section id="FormLabel">
-<h3>Form Labels</h3>
-
-		<p>Forms are the fundamental interface of the interactive web. Programmatic labels for each data entry field or option selecting widget  on any form are critical for many users requiring accessibility support. Furthermore, consistent grouping and form controls on screen location is also critical.</p>
-
-		<dl>
-		<dt>Source</dt>
-		<dd>
-		Far too many sites fail to use available markup to associate date entry fields and status selection control widgets with the labels the print to screen. These sites expect non-disabled users will simply understand what label applies to what field and widget by virtue of how the two are printed to screen. The user who relies on programmatic association is thus disadvantaged. The problem is amplified by the use and re-use of frameworks and low code forms that lack this support.
-		</dd>
-		<dt>Trade-offs</dt>
-		<dd>
-			Clearly source should be performing this function. That fact that it is missing from so many sites cries out for remediation technology on the edge. 
-		</dd>
-		<dt>Benefit</dt>
-		<dd>
-		Well built edge technologies can introduce missing programmatic associations. Advanced strategies to sequence completion of complex forms for persons who are easily overwhelmed by on screen complexity are frustrated when these programmatic associations are missing. Furthermore, they are the only technologies that can bring consistent organization to a form. 
-		</dd>
-
-		<dt class="rt">Related Topics</dt>
-		<dd class="rt">
-			This pervasive problem in interactive content today is also related to <a href="#structnorm">Normalize the Structural Composite</a> overlay edge capability described above.
-		</dd>
-
-		</dl>
-
-</section>
-
-
-</section>
-
-<section id="XX">
-	<h2>XX</h2>links
-
-</section>
-
-<section id="notify">
-	<h2>Notifications</h2>
-
-<section id="notify">
-<h3>Notifications</h3>
-
-<p>Messages shown to the end-user to
-alert them to an event, some specific data-point, or to some state. </p>
-<dl>
-<dt>Source</dt>
-<dd>It seems unlikely source could fully take on this responsibility. 
-On the other hand it seems equally unlikely that edge technology alone can fully meet this need effectively without API-based data interchange with source content.
-	There is particularly cogent needs in <q>augmented reality</q> which are potentially very exciting.
-</dd>
-<dt>Trade-offs</dt>
-<dd>What a user may want or need to know in any given situation or moment is a complex calculation at best. 
-	It&apos;
-s far too easy to overdo notifications, though failing to notify judiciously and appropriately would constitute a major technological opportunity missed. 
-	We need better models and privacy-preserving context awareness to realize all the benefits conceivable in this application of automated opportunities.</dd>
-<dt>Benefit</dt>
-<dd>Controlling the fire hose of notifications is best filtered and managed at the edge because that&apos;s the most data rich locus for technology mediated adaptation and minimal data round-trips to servers.
-	The right information at just the right time can serve as a tremendous quality of life enhancement and it&apos;s best performed locally, not centrally.
-</dd>
-</dl>
-
-</section>
-
-</section>
-
-<section id="XX">
-	<h2>XX</h2>Authentication
-
-</section>
-
-
-<section id="XX">
-	<h2>XX</h2>Rich Media
-
-	Include hyperlink to MAUR
-
-</section>
-<section id="XX">
-	<h2>XX</h2>Reset (To page defaults)
-
-</section>
-
-<section id="XX">
-	<h2>XX</h2>Voice Command
-
-</section>
-</section>
-</section>
-
-<section id="manage">
-<h1>Managerial
-</h1>
-
-<p>
-The capabilities discussed in this section are controlled by the content provider. They <a href="interact">facilitate users interactions</a> with content and services</a> in the <a href="present">way that works best</a> for them. 
-</p>
- 
-<section id="contedit">
-	<h2>Content Editing</h2>
-
-<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written--covering the obvious, e.g. the words of the page will sometimes need updating.</p>
- 
-</section>
 
 <section id="semstruct">
 	<h2>Structural Semantics Remediation</h2>
@@ -988,6 +802,9 @@ It has long been agreed that published content should contain structural markup 
 
 </section>
 
+<section id="nav">
+	<h2>Navigation</h2>
+
 <section id="structnav">
 	<h3>Semantic Navigation</h3>
 
@@ -1010,53 +827,263 @@ It has long been agreed that published content should contain structural markup 
 
 </section>
 
+<section id="keybdnav">
+<h3>Keyboard Navigation Enhancements</h3>
+
+<p>Enhance visual indicators that
+support keyboard navigation such as underlines or color changes; optionally
+provide other assistance such as mapping interactive elements to keyboard
+shortcuts. </p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+Some content publishers offer such transformations. Also, some operating systems provide such features which should not be overwritten by browser technology, generally speaking. 
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	As noted some content publishers offer accessibility related page transformation overlays in their source. As also noted, the drawback with source provided transformations is that they must be applied over and over, site by site except when they&apos;
+re the result of functioning transformations enabled in the operating system of the device itself. However, when a user discovers different settings are useful for different sites, whether these are grossly distinct or highly nuanced distinctions, this may appear to argue for not interfering with user chosen settings on a site by site basis. On the other hand, an edge technology&mdash;especially one that is associated with a user login&mdash;can recognize the distinctions and apply heuristics to learn the nuances a user prefers, possibly enabling it to predict better what might be valuable on a newly visited site.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	The benefit available only from edge-based transformations is that they can be applied to every site the user visits to achieve consistent results when nuanced results are required.
+</dd>
+</dl>
+
+</section>
+</section>
+
+</section>
+
+<section id="forms">
+	<h2>Forms</h2>
+
+<section id="FormLabel">
+<h3>Form Labels</h3>
+
+		<p>Forms are the fundamental interface of the interactive web. Programmatic labels for each data entry field or option selecting widget  on any form are critical for many users requiring accessibility support. Furthermore, consistent grouping and form controls on screen location is also critical.</p>
+
+		<dl>
+		<dt>Source</dt>
+		<dd>
+		Far too many sites fail to use available markup to associate date entry fields and status selection control widgets with the labels the print to screen. These sites expect non-disabled users will simply understand what label applies to what field and widget by virtue of how the two are printed to screen. The user who relies on programmatic association is thus disadvantaged. The problem is amplified by the use and re-use of frameworks and low code forms that lack this support.
+		</dd>
+		<dt>Trade-offs</dt>
+		<dd>
+			Clearly source should be performing this function. That fact that it is missing from so many sites cries out for remediation technology on the edge. 
+		</dd>
+		<dt>Benefit</dt>
+		<dd>
+		Well built edge technologies can introduce missing programmatic associations. Advanced strategies to sequence completion of complex forms for persons who are easily overwhelmed by on screen complexity are frustrated when these programmatic associations are missing. Furthermore, they are the only technologies that can bring consistent organization to a form. 
+		</dd>
+
+		<dt class="rt">Related Topics</dt>
+		<dd class="rt">
+			This pervasive problem in interactive content today is also related to <a href="#structnorm">Normalize the Structural Composite</a> overlay edge capability described above.
+		</dd>
+
+		</dl>
+
+</section>
+
+<section id="textinteract">
+<h2>Interactive Text Elements
+</h2>
+
+<p><strong>EDITOR'S NOTE</strong><br t a/> Section content yet to be written.</p>
+</section>
+
+</section>
+
+</section>
+
+<section id="butlink">
+	<h2>Hyperlinks< & Buttons/h2>
+
+</section>
+
+<section id="clientinteract">
+	<h2>Client-Side Interactions</h2>Client-Side interactions
+	<section id="timeout">
+		<h3>Managing Time Outs</h3>
+
+		</section
+
+		<section id="axvalid">
+			<h3>Accessible Validation</h3>
+
+		</section>
+
+</section>
+
+<section id="txteffects">
+	<h2>Textual Affectations</h2>
+
+<section id="dropcap">
+<h3>Drop Cap Implementation
+</h3>
+
+<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
+</section>
+ 
+<section id="ulol">
+<h3>Bulleted and Numbered Lists
+</h3>
+
+<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
+</section>
+
+<section id="textbox">
+<h3>Text Box Framing
+</h3>
+
+<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
+</section>
+ 
+<section id="shadowout">
+<h3>Shadow and Outline Effects
+</h3>
+
+<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
+</section>
+ 
+<section id="transpcont">
+<h3>Text Transparency Control</h3>
+
+<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written.</p>
+</section>
+
+</section>
+
+<section id="textinteract">
+<h2>Interactive Text Elements
+</h2>
+
+Links and buttons
+
+<p><strong>EDITOR'S NOTE</strong><br t a/> Section content yet to be written.</p>
+</section>
+
+</section>
+
+<section id="notify">
+	<h2>Notifications</h2>
+
+<p>Messages shown to the end-user to
+alert them to an event, some specific data-point, or to some state. </p>
+<dl>
+<dt>Source</dt>
+<dd>It seems unlikely source could fully take on this responsibility. 
+On the other hand it seems equally unlikely that edge technology alone can fully meet this need effectively without API-based data interchange with source content.
+	There is particularly cogent needs in <q>augmented reality</q> which are potentially very exciting.
+</dd>
+<dt>Trade-offs</dt>
+<dd>What a user may want or need to know in any given situation or moment is a complex calculation at best. 
+	It&apos;
+s far too easy to overdo notifications, though failing to notify judiciously and appropriately would constitute a major technological opportunity missed. 
+	We need better models and privacy-preserving context awareness to realize all the benefits conceivable in this application of automated opportunities.</dd>
+<dt>Benefit</dt>
+<dd>Controlling the fire hose of notifications is best filtered and managed at the edge because that&apos;s the most data rich locus for technology mediated adaptation and minimal data round-trips to servers.
+	The right information at just the right time can serve as a tremendous quality of life enhancement and it&apos;s best performed locally, not centrally.
+</dd>
+</dl>
+
+</section>
+
+</section>
+
+<section id="auth-n">
+	<h2>Authentication</h2>
+
+</section>
+
+<section id="richmedia">
+	<h2>Rich Media</h2>
+
+	Include hyperlink to MAUR
+
+</section>
+<section id="XX">
+	<h2>XX</h2>Reset (To page defaults)
+
+</section>
+
+<section id="voxcom">
+	<h2>Voice Command</h2>
+
+</section>
+</section>
+</section>
+
+<section id="contentmanage">
+	<h1>Content Updating & Remediation</h2>
+
+<section id="contedit">
+	<h2>Content Editing</h2>
+
+<p><strong>EDITOR'S NOTE</strong><br /> Section content yet to be written--covering the obvious, e.g. the words of the page will sometimes need updating.</p>
+ 
+</section>
+
 <section id="imgalt">
-	<h3>Image Alt Provisioning</h3>
+	<h2>Image Alternative Text Provisioning</h2>
 
 </section>
-
 <section id="tooltips">
-	<h3>Tooltip Provisioning</h3>
+	<h2>Tooltip Provisioning</h2>
 
 </section>
 
+<section id="lang">
+	<h2>Lang Provisioning</h2>
 
-<section id="XX">
-	<h2>XX</h2>Site Lang Provisioning
+</section>
+
+<section id="titling">
+	<h2>Title Provisioning</h2>Title Provisioning
 
 </section>
 
-<section id="XX">
-	<h2>XX</h2>Title Provisioning
-
-</section>
 <section id="caption">
 	<h2>Captioning</h2>
 
 </section>
+</section>
+</section>
 
-<section id="XX">
-	<h2>XX</h2>Automated Remediation Technology (auto detect, auto remediate)
+<section id="manage">
+<h1>Managerial
+</h1>
+
+<p>
+The capabilities discussed in this section are primarily of interest to the content provider.
+</p>
+
+<section id="autovalid">
+	<h2>Automated Validation</h2>
 
 </section>
 
-<section id="XX">
-	 <h2>XX</h2>Manual Validation
+<section id="manual">
+	 <h2>Manual Validation</h2>
 
 </section>
 
-<section id="XX">
-	<h2>XX</h2>Content Provider Checks (What's this??)
+<section id="checks">
+	<h2>Content Provider Checks</h2>
+
+	<p>What's this??</p>
 
 </section>
 
-<section id="XX">
-	 <h2>XX</h2>User Feedback
+<section id="feedback">
+	<h2>User Feedback</h2>
 
 </section>
 
-<section id="XX">
-	 <h2>XX</h2>Content Submission Moderation
+<section id="submission">
+	<h2>Content Submission Moderation</h2>
 
 </section>
 </section>
@@ -1206,7 +1233,6 @@ their active involvement in the design process, we believe we can create a
 more accessible and inclusive digital environment. By employing HCD, we
 hope to deliver a seamless, enjoyable experience for all users, that is
 more than just accessible - it is truly human-centered.</p>
-
 
 <h3>User-triggered Transformations</h3>
 
