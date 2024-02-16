@@ -888,6 +888,30 @@ re the result of functioning transformations enabled in the operating system of 
 		</dl>
 
 </section>
+<section id="formvalid">
+
+<h3>Form Validation Improvement</h3>
+
+<p>This capability ensures that screen reader users
+and other users requiring enhanced status support receive clear feedback on the status of a form being completed 
+along with concise error messages. This includes the colors used, the proximity
+to the form field, and the time-sensitive nature of the screen reader
+announcement. </p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Source content can, and sometimes does  adequately provide this functionality.
+</dd>
+<dt>Trade-offs</dt>
+<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where the enhanced content is not intended for all page visitors, but for certain audiences only, such as screen reader users  for some users living with cognitive or learning disabilities.</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports more efficient interaction with forms for users who require the enhanced support. Makes completing forms much easier to accomplish.
+</dd>
+</dl>
+
+</section>
 
 </section>
 
@@ -895,13 +919,81 @@ re the result of functioning transformations enabled in the operating system of 
 <h2>Interactive Text Elements
 </h2>
 
-<p><strong>EDITOR'S NOTE</strong><br t a/> Section content yet to be written.</p>
+<section id="interactivelements">
+<h3>Interactive Elements Status Clarification</h3>
+
+<p>This capability ensures concise
+instructions and labels that are clear to sighted, low vision, and non sighted
+users alike, and that the elements can be controlled through keyboard navigation.
+It also provides feedback on the status of the element and on any status changes that may occur. </p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+While source content is expected to provide the same clarity, remediating it to do so isn&apos;t always immediately feasible.
+</dd>
+<dt>Trade-offs</dt>
+<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where source is demonstrably less informative than needed for functional accessibility support.</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports more efficient interaction with content for users who require the enhanced support.
+</dd>
+</dl>
+
 </section>
+
 
 <section id="butlink">
 	<h2>Hyperlinks &amp; Buttons</h2>
 
+<section id="externallinks">
+<h3>External Link Target Notification</h3>
+
+<p>This capability:</p>
+
+<ul>
+	<li>Assures users relying on TTS (or braille) that hyperlinks are correctly announced as links;</li>
+	<li>Informs them whether the linked content will open in a new tab or window;</li>
+	<li>Verifies that links resolve correctly and any broken links are so labeled.</li>
+	</ul>
+
+<dl>
+<dt>Source</dt>
+<dd>
+While source content is expected to maintain viable hyperlinks and provide the same clarity about their status, remediating it to do so isn&apos;t always immediately feasible.
+</dd>
+<dt>Trade-offs</dt>
+<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where source is demonstrably less informative than needed for functional accessibility support.</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports more efficient interaction with content for users who require the enhanced support.
+</dd>
+</dl>
+
 </section>
+<section id="ambiglink">
+<h3>Ambiguous Link Notification</h3>
+
+<p>This capability Provides descriptive and meaningful
+link text that accurately reflects the purpose or destination of the link when the source content fails to do so.
+This is particularly needed for link text such as <q>click here</q> or
+<q>more.</q> </p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While source content is expected to maintain viable hyperlinks and provide the same clarity about their status, remediating it to do so isn&apos;t always immediately feasible. <q>Click here</q> and <q>more</q> link text is far too common and rarely sufficiently unambiguous.
+</dd>
+<dt>Trade-offs</dt>
+<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where source is demonstrably less informative than needed for functional accessibility support.</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports more efficient interaction with content for users who require the enhanced support.
+</dd>
+</dl>
+
+</section>
+
 
 <section id="clientinteract">
 	<h2>Client-Side Interactions</h2>
@@ -1021,24 +1113,110 @@ s far too easy to overdo notifications, though failing to notify judiciously and
 <section id="imgalt">
 	<h2>Image Alternative Text Provisioning</h2>
 
+
 </section>
-<section id="tooltips">
-	<h2>Tooltip Provisioning</h2>
+<p>Supply missing alternative text for content images.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Clearly, alternative text should be supplied by source content. This capability serves as a fundamental accessibility remediation when immediate remediations to the source content are infeasible for some reason.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+Some browser extensions support A-I based alternative text remediation. However, A-I remediation is still considered less accurate, and therefore less desirable than human provided text alternatives.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Good alternative text is often essential for comprehending site content for users who cannot see, but also for users on highly restricted bandwidth as continues to exist in many regions of the world.
+</dd>
+</dl>
+
+</section>
+
+<section id="tooltip">
+<h3>Tooltip Provisioning</h3>
+
+<p>This capability supplies a small pop-up window that appears
+on hover to display additional information about an element on the page for users who benefit from enhanced
+contextualization or clarification.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Source content can, and sometimes does  provide this functionality.
+</dd>
+<dt>Trade-offs</dt>
+<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where the enhanced content is not intended for all page visitors, but for certain audiences only, such as additional contextualization or clarification for some users living with cognitive or learning disabilities.</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports comprehension for users who require the enhanced support in a manner that does not interfere with the fundamental functionality of the content.
+</dd>
+</dl>
 
 </section>
 
 <section id="lang">
-	<h2>Lang Provisioning</h2>
+<h2>Site Language Indication</h2>
+
+<p>This capability correctly specifies the primary language of a
+web page when the declaration is incorrect or missing entirely.</p>
+
+</section>
 
 </section>
 
 <section id="titling">
 	<h2>Title Provisioning</h2>Title Provisioning
 
+
+<p>This capability provides for meaningful titles, for pages and/or
+iFrames within pages, and provides screen reader users a more efficient and meaningful browsing experience.</p>
+
 </section>
 
-<section id="caption">
-	<h2>Captioning</h2>
+<section id="feedback">
+	<h2>User Feedback</h2>
+
+</section>
+
+<section id="contentmod">
+<h2>Content Moderation</h2>
+
+<p>This capability helps assure that site content meets the publisher&apos;s content policies. Typical policies will include everyday phrases with
+racist origins, and gendered or exclusive expressions and terms that are deemed
+to exclude audiences.</p>
+</section>
+
+<section id="videocaption">
+<h2>Video Captioning</h2>
+
+<p>This capability provides caption text displaying along with
+video and synchronized with it.</p>
+	
+<dl>
+<dt>Source</dt>
+<dd>
+	Source generally provides captions, as they are most knowledgeable about the content.
+</dd>
+<dt>Trade-offs</dt>
+<dd>The cost of generating captions is prohibitive, promoting the use of automated captions. However, automation often makes mistakes. 
+</dd>
+<dt>Benefit</dt>
+<dd>
+	The cost of generating captions is prohibitive, and automation with human editing is almost universally relied upon. 
+</dd>
+</dl>
+
+</section>
+
+<section id="pdf">
+<h3>PDF Remediation</h3>
+
+<p>This capability helps assure that a published PDF document is correctly tagged and
+marked up sufficiently in order that it can be accessed and more readily understood by people with
+disabilities, including those who use assistive technology such as a screen
+reader.</p>
 
 </section>
 </section>
@@ -1049,34 +1227,327 @@ s far too easy to overdo notifications, though failing to notify judiciously and
 </h1>
 
 <p>
-The capabilities discussed in this section are primarily of interest to the content provider.
+The capabilities discussed in this section are primarily of interest to the content provider
+who shape the key elements or features of their digital content in order to support an intended user persona and journey. 
+As stated above this typically results in a highly interactive experience presented to the user, packed with services supplied by third parties, many of which are added in their efforts to further accommodate, 
+engage and please the end user while meeting regulatory requirements. 
 </p>
 
-<section id="autovalid">
-	<h2>Automated Validation</h2>
+<section id="autoai">
+	<h2>Leveraging Automation</h2>
+
+
+	<section id="knowledge">
+		<h3>Having Sufficient Knowledge & Skills</h3>
+
+		  <p>Accessibility is a complex subject, and approaches differ per role. Suitably trained designers, brand owners, marketing managers, software developers and quality assurance are difficult to hire and retain. </p> 
+			<dl>
+				<dt>Source</dt>
+				<dd>The most accessible organizations are those with a deep and robust culture around accessibility. Every role is aware and trained in the topic. In addition, persons with disabilities are involved as well. </dd>
+
+				<dt>Trade-offs</dt>
+				<dd>Offloading accessibility knowledge may mean the organization will never reach the attitude and approach expected as a low bar of accessibility: including people with disabilities.  </dd>
+
+				<dt>Benefit</dt>
+				<dd>Like any complex topic, organizations are wide to hire experts and give them the latitude to fix things. Since providing access to digital assets at source is a security risk, allowing the accessibility provider to fix things at the edge is a sound decision. </dd>
+
+				<dt>Related Topics</dt>
+				<dd class="rt">
+					Knowledge and skills are a primary driver behind <a href="#3rd-party"><q>My Site, Their Service</q></a>.</dd>
+			</dl>
+	</section>
+
+	<section id="3rd-party">
+		<h3>My Site, Their Service</h3>
+
+		  <p>Third party services not hosted by the Content Provider, providing services in support of the Content Provider's value proposition. Typically invoked by JavaScript or the Content Delivery Network, they meet the planned needs of end users. </p> 
+			<dl>
+				<dt>Source</dt>
+				<dd>They typical website today is a platform for interaction, a space where an organization meets its customers. End users expect a broad range of services that are likely outside the core competency of the site owner. A company cannot become jack-of-all-trades and master of none. Build or buy decisions, when executed well, can mean the difference between success of failure for a business. Just as most companies don't build the buildings they inhabit or the elevators that operate within, they do not program the intricate digital services required on their websites such as GDPR cookie handling, chatbots, or shopping carts. Procurement can request accessibility conformance statements from services as a gating decision point to include them on the page or not. </dd>
+
+				<dt>Trade-offs</dt>
+				<dd>Companies relinquish some control when they host functions via third parties. But their responsibility is to verify the accessibility of these services. </dd>
+
+				<dt>Benefit</dt>
+				<dd>Given the bewildering range of possible experiences with all these third party plugins operating, the edge becomes the only place where a proper validation can occur.</dd>
+
+				<dt>Related Topics</dt>
+				<dd class="rt">
+					This is closely related to <q>Having Knowledge and Skills</q> and <q>Only The Edge Knows For Sure</q>.</dd>
+			</dl>
+	</section>
+
+
+<section id="onlyedgeknows">
+<h3>Only The Edge Knows For Sure</h3>
+
+  <p>While some rare web pages serve up a single experience like a short order cook handing over a burger, most are like the food court at a shopping mall with many independent services rallying to the end user&apos;s needs. Content providers pack their pages with services such as cookie permissions, chat, payment gateways, user-generated reviews, and most prolifically advertisements. 
+	<dl>
+		<dt>Source</dt>
+		<dd>Content providers can only guess at an end user&apos;s experience by testing well chosen scenarios. Large organizations may arrange focus groups that give a glimpse of a few users, at one moment in time. But in the end, almost by definition, the source cannot know. </dd>
+
+		<dt>Trade-offs</dt>
+		<dd>Persons with disabilities tend to be concerned about content
+			providers discovering and monetizing user data. 
+			Their lived reality has made
+			them highly desirous to preserve their privacy 
+			because of perceived and actual
+			experience of discrimination over many years. Privacy assurances, along with steep privacy violation fines, can build trust over time, such as that supporting the nearly ubiquitous use of Google Analytics at the edge.</dd>
+
+		<dt>Benefit</dt>
+		<dd>Sampling and monitoring the accessibility of the user experience can only occur at the moment of user access because only the edge knows for sure. Much as a thermostat should be positioned far from the heat source, to measure the temperature of the room, monitoring at the edge is the only way to determine what is happening there. </dd>
+
+		<dt>Related Topics</dt>
+		<dd class="rt">
+		The uniqueness of the Edge experience is driven primarily by Only The Edge Knows For Sure (3.1.3). 
+		Any listening in on the Edge will have to Preserve User Agency (2.1.1).
+		</dd>
+
+	</dl>
+	</section>
+
+	<section id="autobgproc">
+		<h3>Fully Automated Transformations</h3>
+
+		  <p>Automated transformations applied based on conditions edge technology discovers in the user&apos;s technology.
+			</p>
+
+			<dl>
+				<dt>Source</dt>
+				<dd>Content providers have long sought to tailor UX behavior based on what capabilities could be discovered about the user&apos;s operating environment. What browser is in use? Desktop, mobile or smart watch? Is a screen reader in use? Indeed, <a
+						href="https://www.w3.org/TR/turingtest/#recap3">Google&apos;s automated Recaptcha 3 is deeply dependent on just such data gathering</a>.
+				</dd>
+
+				<dt>Trade-offs</dt>
+				<dd>While a well-crafted remediation
+					  technology may be invisible to users, it is both
+						risky and presumptuous to presume there will be no users who will not
+						experience some kind of accessibility challenge even among the best crafted remediation technologies. Matters are made worse when the user is left uninformed and feels a loss of agency. 
+		        </dd>
+
+							<dt>Benefit</dt>
+							<dd>Users do indeed expect their technologies will operate automatically and seamlessly to provide an accessible and functional experience. This is an accepted technological expectation. Content providers do not err in
+								attempting to meet this expectation. 
+								An automated UX transformation approach can provide clear benefits. One example is real-time applications such as <a href="https://www.w3.org/TR/raur/">Real Time Communications (RTC)</a>.
+			        Immediacy matters. Automated captions may not provide the desired quality, but the alternative may too often be no captions whatsoever.
+				        Similarly missing image descriptions generated by A-I may prove more helpful to the user coping with a substandard page than no alternative text at all.
+					        Pages whose content remains unremediated can also tend to encourage users to seek alternative providers.
+
+						</dd>
+
+							<dt>Related Topics</dt>
+							<dd class="rt">
+							Keep in mind that <a href="onlyedgeknows">Only The Edge Knows For Sure</a>. We emphasize the critical importance of <a href="usrctrl">Preserving User Agency</a> in fully automated transformations.
+							</dd>
+
+			</dl>
+	</section>
+	 
+	<section id="autoWCAG">
+	<h3>Automated Detection of WCAG Violations</h3>
+
+			<p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
+				There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here.</p>
+			<dl>
+			<dt>Source</dt>
+			<dd>
+			If source got this right (as WCAG 2.x seems to expect), we wouldn&apos;t have a need for this capability.
+			</dd>
+			<dt>Trade-offs</dt>
+			<dd>In-browser scanners and online scanners are used to detect WCAG violations. 
+				This is the business model for many companies. 
+				False positives, false negatives, certainty and confidence scores are well-known factors affecting the success and usefulness of this approach. 
+				It is unfortunate when such violations remain unremediated in source content, but sometimes this can&apos;t be helped. 
+				An indication of violations at the edge, however rough, is better than none.
+			</dd>
+			<dt>Benefit</dt>
+			<dd>
+				Large, complex and highly dynamic source sites are literally unable to reproduce every user experience permutation in their test beds. Automated detection and 
+				reporting can help bridge this gap. 
+				Something is most often better than nothing, especially in the moment. 
+				It looms ever larger as it stacks, and automated detection is often the first step in a chain of capabilities.
+			</dd>
+
+					<dt>Related Topics</dt>
+					<dd class="rt">
+					Keep in mind that <a href="knowledge">Having Knowledge and Skills</a>, as well as <a href="#onlyedgeknows">Only The Edge Knows For Sure</a> and . </dd>
+
+</dl>
 
 </section>
 
-<section id="manual">
-	 <h2>Manual Validation</h2>
+<section id="HIT">
+<h3>Human Mediated Automated Remediation</h3>
+
+		<p>While not the glamorous <q>holy grail</q> of technology deployment today, human mediation of A-I identified checkpoints, together with the site owner&apos;s active participation to clarify meaning and intent, describes an effective approach to accomplish accessibility remediations where they&apos;re needed. No other approach delivers equally effective remediations at such scale.
+		</p>
+
+		<dl>
+		<dt>Source</dt>
+		<dd>
+			This is a process approach just as meaningful for remediating accessibility violations in source as it is for remediating at the edge. Though to argue any remediation <strong>not</strong> done at source or <strong>not</strong> performed by a human, may describe a theology of accessibility, not a technological solution delivering real benefits to users.
+		</dd>
+		<dt>Trade-offs</dt>
+		<dd>
+			It is clearly preferable to remediate violations in source content whenever doing so is feasible. An in-process corrective overlay remediations only make sense when there are good reasons why the source cannot be remediated. 
+		</dd>
+		<dt>Benefit</dt>
+		<dd>
+			The user always benefits when best available remediation approaches are employed. Nor will the user ever care where and how the remediation is accomplished as long as it facilitates the user&apos; s ability to function.
+		</dd>
+		</dl>
 
 </section>
 
-<section id="checks">
+<section id="a11yedit">
+<h3>Accessibility Editing, By Site Owner</h3>
+
+		<p>This capability describes an interface in the overlay,
+		available to authorized users, facilitating manual editing of source code that affects
+		accessibility, e.g. alt tags for images, or ARIA labels, often with the assistance of linting, wizards and supplemental materials.</p>
+
+		<dl>
+		<dt>Source</dt>
+		<dd>
+			Where the source lacks sufficient accessibility supporting markup, this capability provides both analytics and remediation access to properly authenticated 
+		persons empowered to perform remediation. Note the assumption is that, for whatever reason, the content technology provided by the hosting environment lacks adequate accessibility supporting technology.
+		</dd>
+		<dt>Trade-offs</dt>
+		<dd>
+		A properly configured content hosting environment should be able to accomplish accessible content publication. Such editing performed at the edge depends on robust IDs, and can be more brittle than changes at source.
+		</dd>
+		<dt>Benefit</dt>
+		<dd>
+			This capability facilitates adding missing accessibility supporting markup to source content. It is unique to overlays of this type, providing an alternative to standard methods of
+			coding the site, either via source code, web platform templates/CSS
+			adjustments, etc. This capability exists to assist sites who fail accessibility, usually for a complex set of reasons where source remediation is expensive or otherwise not readily achievable.
+			This is not  a redundant capability. Rather, it is an innovation only available from edge technology. Equivalent technology in source would require the site publisher to establish a complete panoply of content management tooling. While this is certainly feasible, not everyone wishing to make content available on line desires to spend time gaining proficiency with content management systems. 
+		</dd>
+		<dt class="rt">Related Topics</dt>
+		<dd class="rt">
+		This editing typically requires
+		accessibility expertise, but the content publisher&apos;s expertise, and the site&apos;s content may actually represent an entirely different area of content expertise.
+		</dd>
+		</dl>
+
+</section>
+<section id="a11yedit3rd">
+<h3>Accessibility Editing, By 3rd Party</h3>
+
+<p>This capability functions very much like the <a href="#a11yedit">Accessibility editing, by site owner</a> immediately above, except that a third party accessibility coding expert is granted access to perform needed remediations.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	The only alternative in source is write access for the third party to the source content. On some sites this may require full administrative access.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	This is not  a redundant capability. It is an innovation only available from edge technology.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Accessibility edits are provided to the content publisher much like pull requests in version control systems.
+</dd>
+</dl>
+
+</section>
+</section>
+
+<section id="cntresp">
 	<h2>Content Provider Checks</h2>
 
-	<p>What's this??</p>
+<section id="profile-userint">
+
+<h3>Feature-Bundling Profiles</h3>
+
+<p>Site publishers need to support the full spectrum of accessibility features. On the other hand individual users need certain features and will ignore those they do not need. The types of features individual users need are  often group-able
+into bundles, making it easier to turn on groups
+of features, e.g. high contrast and larger text size.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+As previously noted, users will need the same (or very similar) feature support across all their various devices. This makes supporting even grouped feature profiles in source (and even in the OS) less effective than an edge solution could be, because it requires the user to make the same selections time and again.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Grouping related features together into named profiles enables users to find and focus on the ones they need to configure and ignore the rest. The emerging approach aimed at propagating user profile configurations across all of a user&apos;s devices makes edge technology the only logical locus for this capability.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	This is yet another instance supporting <q>Configure Once, Use Everywhere</q>.
+</dd>
+</dl>
+</section>
+
+<section id="a11ystmnt">
+<h3>Accessibility Statement Availability</h3>
+
+<p>Providing an easily located Accessibility Statement has become a widely accepted best practice in the industry. While there is no consensus on what all should be included, it is generally agreed that the formal Statement should define the site&apos;s commitment to accessibility of its content and services. Additional content, such as accessibility specific contact data, and accessibility specific help resources are also frequently included.
+</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	It is currently a best practice to link to the Accessibility Statement (and related resources) from the site&apos;s footer.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	An Accessibility Statement introduced by edge technologies doesn&apos;t add value, though adding locale specific content might be useful.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	To the extent that locale specific data may be helpful to users, edge technology may be the best means of providing the most timely locale-specific accessibility information.
+</dd>
+</dl>
+
+</section>
+<section id="a11yprov">
+<h3>Accessibility Provider Identification</h3>
+
+<p>This capability display to website users the name
+(and perhaps the logo) of the primary accessibility provider, who stands behind the accessibility of
+the site. This may be part of the accessibility
+statement.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Identifying the provider of accessibility to site source is a matter of transparency and will likely be gladly accomplished by any provider taking pride in the quality of their output.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Providing accessibility to content, whether at the source or with in-process transformations, should never be opaque. Users deserve to know who is responsible for their experience of web content.
+</dd>
+<dt>Benefit</dt>
+<dd>
+</dd>
+</dl>
 
 </section>
 
-<section id="feedback">
-	<h2>User Feedback</h2>
+<section id="reporting">
+<h3>Accessibility Issue Reporting</h3>
 
-</section>
+<p>This capability provides a form, or an email link, enabling
+end-users the ability to report barriers they&apos;ve experienced on a site. Accessibility-specific reporting is an industry best practice.</p>
 
-<section id="submission">
-	<h2>Content Submission Moderation</h2>
-
+<dl>
+<dt>Source</dt>
+<dd>
+Clearly, such a form-based reporting mechanism can be in source content. It is another feature that would likely be best provided along with the Accessibility Statement and related resources.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	While not obviating source based issue reporting, edge technologies are uniquely positioned to attach possibly relevant metadata to such reports.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Such a form requires the source provider to think through who should receive and process these reports. Most particularly, they will need to consider what accessibility expertise is available to evaluate and follow-up on such reports.
+</dd>
+</dl>
+ 
 </section>
 </section>
 </section>
@@ -1137,7 +1608,31 @@ While this capability remains aspirational in the main as of this writing, it is
 	<section id="surrogacy">
 		<h2>Surrogacy Support</h2>
 
-		<p>Provide machine login access for legal, caretaker, parent, etc.</p>
+<p>A compelling largely unmet need exists for legal surrogacy services, whether fiduciary, medical, or probate. Whether to access data stored in the account of someone recently deceased, or in the account of a minor child, or of a parent or social agency client, only a very few major web content service providers have begun addressing this need as of this writing and only for their own systems. This need is particularly acute where print disabilities are to be factored. Most legal jurisdictions today accept such instruments executed only on paper, thus discriminating against persons incapable of managing paper on their own.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While it could be supported in source content, this capability is rarely (if ever) available in source.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Users requiring this accommodation will most likely require it across all sites they visit.
+</dd>
+
+<dt>Benefit</dt>
+<dd>
+	Only edge technology is capable of performing this accommodation across all sites a user accesses.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+        This capability is yet another example of <a
+href="#portable">configure once, use everywhere</a> only available through
+accessible edge technologies.
+</dd>
+ 
+</dl>
 
 	</section>
 
@@ -1174,10 +1669,128 @@ While this capability remains aspirational in the main as of this writing, it is
 	<section id+"caltrans">
 		<h2>Calendar Format Translation</h2>
 
+	<p>Calendar format translation is important for most any user of software, but arguably more so for the user relying on assistive technologies. While industry could long ago have solved this persistent incompatibility across operating environments, they have rather chosen to seek to impose vendor lock-in. This does not serve users who should be free to maintain calendars in the environment of their choice, or even different calendars in multiple environments with full transparency. This is not a technical challenge. Rather, it is a business choice.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While it could be supported in source content, this capability is rarely (if ever) available in source, and then only in third party applications seeking to support all common calendaring formats. In fact this capability illustrates source intransigence where user needs should predominate.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Users requiring this accommodation will most certainly require it across all sites they visit.
+</dd>
+
+<dt>Benefit</dt>
+<dd>
+	Only edge technology is capable of performing this accommodation across all sites a user accesses.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+        This capability is yet another example of <a
+href="#portable">configure once, use everywhere</a> only available through
+accessible edge technologies.
+</dd>
+ 
+</dl>
+
+
 	</section>
+
+<section id="commandconversion">
+	<h3>Support Command Normalization</h3>
+ 
+<p>Sometimes vendors support accessibility by mapping a series of keystrokes for screen reader users (and others who prefer keyboard commands to mouse clicks) to their own proprietary definitions. Often these duplicate standard command sequences used for similar purposes in widely used software. This capability proposes that overlay technology can remap proprietary command mappings to more commonly known command mappings, thus greatly reducing or even eliminating an unnecessary learning challenge for the end user.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While it could be supported in source content, this capability is rarely (if ever) available in source.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Users requiring this accommodation will most likely require it across all sites they visit.
+</dd>
+
+<dt>Benefit</dt>
+<dd>
+	Only edge technology is capable of performing this accommodation across all sites a user accesses.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+        This capability is yet another example of <a
+href="#portable">configure once, use everywhere</a> only available through
+accessible edge technologies.
+</dd>
+ 
+</dl>
+
+</section>
+
 
 	<section id+"skim">
 		<h2>Mediate Content Skimming</h2>
+
+	<p>It is often useful to skim through content to determine what, if any of it, might benefit the user by a more careful reading. Good user agent support for such a feature would not only support sequential summarization, but the marking of particular sections to return to for greater study.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While it could be supported in source content, this capability is rarely (if ever) available in source.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Users requiring this accommodation will most likely require it across all sites they visit.
+</dd>
+
+<dt>Benefit</dt>
+<dd>
+	Only edge technology is capable of performing this accommodation across all sites a user accesses.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+        This capability is yet another example of <a
+href="#portable">configure once, use everywhere</a> only available through
+accessible edge technologies.
+</dd>
+ 
+</dl>
+</section>
+
+<section class="summarize-sl">
+	<h3>Mediate Skimming Sign-Language Content</h3>
+
+	<p>Skimming through content to determine what, if any of it, might benefit the user by a more careful reading is just as valuable to users who depend on sign-language, or who utilize Augmentative and Alternative Communication (AAC) symbolic languages, as it for those who read text. As with summation services with text, good user agent support for such a feature would not only support sequential summarization, but the marking of particular sections to return to for greater study.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While it could be supported in source content, this capability is rarely (if ever) available in source.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Users requiring this accommodation will most likely require it across all sites they visit.
+</dd>
+
+<dt>Benefit</dt>
+<dd>
+	Only edge technology is capable of performing this accommodation across all sites a user accesses.
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+        This capability is yet another example of <a
+href="#portable">configure once, use everywhere</a> only available through
+accessible edge technologies.
+</dd>
+ 
+</dl>
+
+</section>
+
 
 	</section>
 </section>
