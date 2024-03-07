@@ -24,7 +24,6 @@
 	<section class="title notoc">
 <h1><b>Overlay Capabilities Inventory</b></h1>
 
-
 	</section>
 
         <section id="abstract">
@@ -175,15 +174,225 @@ s own hardware and software may render it in ways the Content Provider never ima
 </section>
 
 <section id="gloss">
-<h1>
-Glossary
-</h1>
+<h1>Glossary</h1>
 
 <p><strong>EDITOR'S NOTE</strong><br> Section content yet to be written.</p>
 </section>
+
+<section id="contentmanage">
+	<h1>Content</h1>
+
+<section id="contedit">
+	<h2>Content Editing</h2>
+
+<section id="imgalt">
+	<h3>Image Alternative Text Provisioning</h3>
+
+<p>Supply missing alternative text for content images.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Clearly, alternative text should be supplied by source content. This capability serves as a fundamental accessibility remediation when immediate remediations to the source content are infeasible for some reason.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+Some browser extensions support A-I based alternative text remediation. However, A-I remediation is still considered less accurate, and therefore less desirable than human provided text alternatives.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Good alternative text is often essential for comprehending site content for users who cannot see, but also for users on highly restricted bandwidth as continues to exist in many regions of the world.
+</dd>
+
+<dt>Automatability</dt>
+<dd>
+Placeholder pending content
+</dd>
+
+</dl>
+
+</section>
+
+<section id="tooltip">
+<h3>Tooltip Provisioning</h3>
+
+<p>This capability supplies a small pop-up window that appears
+on hover to display additional information about an element on the page for users who benefit from enhanced
+contextualization or clarification.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	Source content can, and sometimes does  provide this functionality.
+</dd>
+<dt>Trade-offs</dt>
+<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where the enhanced content is not intended for all page visitors, but for certain audiences only, such as additional contextualization or clarification for some users living with cognitive or learning disabilities.</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports comprehension for users who require the enhanced support in a manner that does not interfere with the fundamental functionality of the content.
+</dd>
+
+<dt>Automatability</dt>
+<dd>
+Placeholder pending content
+</dd>
+
+</dl>
+
+</section>
+
+<section id="lang">
+<h3>Site Language Indication</h3>
+
+<p>This capability correctly specifies the primary language of a
+web page when the declaration is incorrect or missing entirely.</p>
+
+</section>
+
+<section id="titling">
+	<h3>Title Provisioning</h3>Title Provisioning
+
+<p>This capability provides for meaningful titles, for pages and/or
+iFrames within pages, and provides screen reader users a more efficient and meaningful browsing experience.</p>
+
+</section>
+
+</section>
+
+<section id="feedback">
+	<h2>User Feedback</h2>
+
+</section>
+
+<section id="contentmod">
+<h2>Content Moderation</h2>
+
+<p>This capability helps assure that site content meets the publisher&apos;s content policies. Typical policies will include everyday phrases with
+racist origins, and gendered or exclusive expressions and terms that are deemed
+to exclude audiences.</p>
+</section>
+
+<section id="videocaption">
+<h2>Video Captioning</h2>
+
+<p>This capability provides caption text displaying along with
+video and synchronized with it.</p>
+	
+<dl>
+<dt>Source</dt>
+<dd>
+	Source generally provides captions, as they are most knowledgeable about the content.
+</dd>
+<dt>Trade-offs</dt>
+<dd>The cost of generating captions is prohibitive, promoting the use of automated captions. However, automation often makes mistakes. 
+</dd>
+<dt>Benefit</dt>
+<dd>
+	The cost of generating captions is prohibitive, and automation with human editing is almost universally relied upon. 
+</dd>
+
+<dt>Automatability</dt>
+<dd>
+Placeholder pending content
+</dd>
+
+</dl>
+
+</section>
+
+<section id="pdf">
+<h3>PDF Remediation</h3>
+
+<p>This capability helps assure that a published PDF document is correctly tagged and
+marked up sufficiently in order that it can be accessed and more readily understood by people with
+disabilities, including those who use assistive technology such as a screen
+reader.</p>
+
+</section>
+
+<section id="semiotics">
+	<h2>Text Services (Semiotics)</h2>
+
+<section id="dictionary">
+<h3>Dictionary On Demand</h3>
+
+<p>This capability provides definitions of words or
+phrases that may be unfamiliar to some users; provides pronunciation guidance;
+and provides synonyms which can all especially help users living with cognitive and learning disabilities
+better comprehend content.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While this functionality could be made available through source content, it would be limited to the site that chose to provide the capability.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	The benefit of providing this capability in edge technology is that it can be applied across all sites a user access, and for all devices the user may use. When browsers provide this capability, its functionality is limited to the browser being used (though a particular browser may be able to remember a user&apos;s preference for this functionality across multiple devices). Only edge technology can provide this capability across browser and operating environments as well as across sites.
+</dd>
+<dt>Benefit</dt>
+<dd>
+	Supports comprehension for users who require the enhanced support in a manner that does not interfere with the fundamental functionality of the content. This is yet another instance supporting <q>Configure Once, Use Everywhere</q>.
+</dd>
+
+<dt>Automatability</dt>
+<dd>
+Placeholder pending content
+</dd>
+
+</dl>
  
+</section>
+
+<section id="translate">
+<h3>Live Site Translations</h3>
+
+<p>Offer a user-triggered method to
+This capability changes the language of a web page in real time, by translating the current page
+into a language selected by the user.</p>
+
+</section>
+
+<section id="qualitytts">
+<h3>Read Content Aloud</h3>
+
+<p>This capability allows a user to hear content spoken aloud by using a cloud (or browser) hosted Text to Speech (TTS) engine. There are now high quality TTS engines and listening while reading on screen is often beneficial for users in general, including especially users living with certain cognitive and learning disabilities.</p>
+
+<dl>
+<dt>Source</dt>
+<dd>
+	While it could be supported in source content, this capability is rarely (if ever) available in source.
+</dd>
+<dt>Trade-offs</dt>
+<dd>
+	Users requiring this accommodation will most likely require it across all sites they visit.
+</dd>
+
+<dt>Benefit</dt>
+<dd>
+	Only edge technology is capable of performing this accommodation across all sites a user accesses.
+</dd>
+
+<dt>Automatability</dt>
+<dd>
+Placeholder pending content
+</dd>
+
+<dt class="rt">Related Topics</dt>
+<dd class="rt">
+        This capability is yet another example of <a
+href="#portable">configure once, use everywhere</a> only available through
+accessible edge technologies.
+</dd>
+ 
+</dl>
+
+</section>
+</section>
+</section>
+
 <section id="present">
-<h1>Presentational
+<h1>Presentation
 </h1>
 
 <p>
@@ -674,86 +883,6 @@ accessible edge technologies.
 </section>
 </section>
 
-<section id="semiotics">
-	<h1>Text Services (Semiotics)</h1>
-
-<section id="dictionary">
-<h2>Dictionary On Demand</h2>
-
-<p>This capability provides definitions of words or
-phrases that may be unfamiliar to some users; provides pronunciation guidance;
-and provides synonyms which can all especially help users living with cognitive and learning disabilities
-better comprehend content.</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	While this functionality could be made available through source content, it would be limited to the site that chose to provide the capability.
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-	The benefit of providing this capability in edge technology is that it can be applied across all sites a user access, and for all devices the user may use. When browsers provide this capability, its functionality is limited to the browser being used (though a particular browser may be able to remember a user&apos;s preference for this functionality across multiple devices). Only edge technology can provide this capability across browser and operating environments as well as across sites.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	Supports comprehension for users who require the enhanced support in a manner that does not interfere with the fundamental functionality of the content. This is yet another instance supporting <q>Configure Once, Use Everywhere</q>.
-</dd>
-
-<dt>Automatability</dt>
-<dd>
-Placeholder pending content
-</dd>
-
-</dl>
- 
-</section>
-
-<section id="translate">
-<h2>Live Site Translations</h2>
-
-<p>Offer a user-triggered method to
-This capability changes the language of a web page in real time, by translating the current page
-into a language selected by the user.</p>
-
-</section>
-
-<section id="qualitytts">
-<h2>Read Content Aloud</h2>
-
-<p>This capability allows a user to hear content spoken aloud by using a cloud (or browser) hosted Text to Speech (TTS) engine. There are now high quality TTS engines and listening while reading on screen is often beneficial for users in general, including especially users living with certain cognitive and learning disabilities.</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	While it could be supported in source content, this capability is rarely (if ever) available in source.
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-	Users requiring this accommodation will most likely require it across all sites they visit.
-</dd>
-
-<dt>Benefit</dt>
-<dd>
-	Only edge technology is capable of performing this accommodation across all sites a user accesses.
-</dd>
-
-<dt>Automatability</dt>
-<dd>
-Placeholder pending content
-</dd>
-
-<dt class="rt">Related Topics</dt>
-<dd class="rt">
-        This capability is yet another example of <a
-href="#portable">configure once, use everywhere</a> only available through
-accessible edge technologies.
-</dd>
- 
-</dl>
-
-</section>
-</section>
-
 <section id="interact">
 <h1>Functionality
 </h1>
@@ -1171,141 +1300,8 @@ Placeholder pending content
 
 </section>
 
-<section id="contentmanage">
-	<h1>Content Updating & Remediation</h1>
-
-<section id="contedit">
-	<h2>Content Editing</h2>
-
-<section id="imgalt">
-	<h3>Image Alternative Text Provisioning</h3>
-
-<p>Supply missing alternative text for content images.</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	Clearly, alternative text should be supplied by source content. This capability serves as a fundamental accessibility remediation when immediate remediations to the source content are infeasible for some reason.
-</dd>
-<dt>Trade-offs</dt>
-<dd>
-Some browser extensions support A-I based alternative text remediation. However, A-I remediation is still considered less accurate, and therefore less desirable than human provided text alternatives.
-</dd>
-<dt>Benefit</dt>
-<dd>
-	Good alternative text is often essential for comprehending site content for users who cannot see, but also for users on highly restricted bandwidth as continues to exist in many regions of the world.
-</dd>
-
-<dt>Automatability</dt>
-<dd>
-Placeholder pending content
-</dd>
-
-</dl>
-
-</section>
-
-<section id="tooltip">
-<h3>Tooltip Provisioning</h3>
-
-<p>This capability supplies a small pop-up window that appears
-on hover to display additional information about an element on the page for users who benefit from enhanced
-contextualization or clarification.</p>
-
-<dl>
-<dt>Source</dt>
-<dd>
-	Source content can, and sometimes does  provide this functionality.
-</dd>
-<dt>Trade-offs</dt>
-<dd>This is not  a redundant capability. It is an innovation only available from edge technology in situations where the enhanced content is not intended for all page visitors, but for certain audiences only, such as additional contextualization or clarification for some users living with cognitive or learning disabilities.</dd>
-<dt>Benefit</dt>
-<dd>
-	Supports comprehension for users who require the enhanced support in a manner that does not interfere with the fundamental functionality of the content.
-</dd>
-
-<dt>Automatability</dt>
-<dd>
-Placeholder pending content
-</dd>
-
-</dl>
-
-</section>
-
-<section id="lang">
-<h3>Site Language Indication</h3>
-
-<p>This capability correctly specifies the primary language of a
-web page when the declaration is incorrect or missing entirely.</p>
-
-</section>
-
-<section id="titling">
-	<h3>Title Provisioning</h3>Title Provisioning
-
-<p>This capability provides for meaningful titles, for pages and/or
-iFrames within pages, and provides screen reader users a more efficient and meaningful browsing experience.</p>
-
-</section>
-
-</section>
-
-<section id="feedback">
-	<h2>User Feedback</h2>
-
-</section>
-
-<section id="contentmod">
-<h2>Content Moderation</h2>
-
-<p>This capability helps assure that site content meets the publisher&apos;s content policies. Typical policies will include everyday phrases with
-racist origins, and gendered or exclusive expressions and terms that are deemed
-to exclude audiences.</p>
-</section>
-
-<section id="videocaption">
-<h2>Video Captioning</h2>
-
-<p>This capability provides caption text displaying along with
-video and synchronized with it.</p>
-	
-<dl>
-<dt>Source</dt>
-<dd>
-	Source generally provides captions, as they are most knowledgeable about the content.
-</dd>
-<dt>Trade-offs</dt>
-<dd>The cost of generating captions is prohibitive, promoting the use of automated captions. However, automation often makes mistakes. 
-</dd>
-<dt>Benefit</dt>
-<dd>
-	The cost of generating captions is prohibitive, and automation with human editing is almost universally relied upon. 
-</dd>
-
-<dt>Automatability</dt>
-<dd>
-Placeholder pending content
-</dd>
-
-</dl>
-
-</section>
-
-<section id="pdf">
-<h3>PDF Remediation</h3>
-
-<p>This capability helps assure that a published PDF document is correctly tagged and
-marked up sufficiently in order that it can be accessed and more readily understood by people with
-disabilities, including those who use assistive technology such as a screen
-reader.</p>
-
-</section>
-</section>
-
 <section id="manage">
-<h1>Managerial
-</h1>
+<h1>Management</h1>
 
 <p>
 The capabilities discussed in this section are primarily of interest to the content provider
@@ -1693,8 +1689,7 @@ Placeholder pending content
 </section>
 
 <section id="aspire">
-<h1>Aspirational
-</h1>
+<h1>Aspirational</h1>
 
 <p>
 
