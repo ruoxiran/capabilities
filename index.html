@@ -28,12 +28,12 @@
 
         <section id="abstract">
 		        <h2>Abstract</h2>
-			<p>Lately various web based accessibility enhancement, remediation, and reporting services have been made available to web content providers under the term: <q>Overlay.</q>
-			Typically these function by adding a snippet of JavaScript into a web content provider&apos;s page. This single line of additional code functions to enable additional content processing on each page load delivered through
-			the overlay provider&apos;s servers,  before the content is delivered to the end user. While this routing paradigm is by no means unique to accessibility applications, it does introduce accessibility opportunities and
+			<p>Lately various web based accessibility enhancement, remediation, and reporting services have been made available to web content providers under an umbrella term: <q>Overlay.</q>
+			Typically overlays work by adding a snippet of JavaScript into a web content provider&apos;s page. This single line of additional code functions to enable additional content processing on each page load delivered through
+			the overlay provider&apos;s servers,  prior to delivery to the end user. While this routing paradigm is by no means unique to accessibility applications, it does introduce accessibility opportunities and
 			challenges.</p>
 
-			<p>In this document we explore the specific capabilities that are, or could be,  applied for accessibility purposes whether by overlay technologies, browser extensions, plugins installed on user&apos;s devices and so on. Some of the capabilities explored here are already available and used in web content delivery systems today. Others suggest best practices guidance. Still others strike us as highly desirable, but will require the creation of a normative W3C specification, especially in the case of cross-platform functionality. As with the accessibility impact of any web technology, poor implementation will predictably yield unsatisfactory user experiences, while well-crafted solutions may significantly enhance the user&apos;s experience.</p>
+			<p>In this document we explore the specific capabilities that are, or could be,  applied for accessibility purposes whether by overlay technologies, browser extensions, plugins installed on user&apos;s devices or by other methods and tools. Some of the capabilities explored here are already available and used in web content delivery systems today. Others suggest best practices guidance. Still others strike us as highly desirable, but will require the creation of a normative W3C specification, especially in the case of cross-platform functionality. As with any web technology, poor design or implementation will predictably yield unsatisfactory user experiences, while well-architected and well-implemented solutions will significantly enhance the user&apos;s experience.</p>
 
 			        </section>
 
@@ -47,14 +47,14 @@
 	<section id="edgedef">
 		<h3>What is Meant By <q>Edge?</q></h3>
 
-		<p>The term <q>edge technology</q> refers to that portion of the assembled presentation of web content most proximate to the content user. Typically it is:</p>
+		<p>In this document the term <q>edge technology</q> refers to those web technologies most proximate to the web user that canstill affect the accessibility of assembled (mashed-up) web content. Typically it is:</p>
 
 		<ol>
 			<li>The user agent (with its user chosen plugins and extensions) together with the host and physical device the user uses to read and interact with web content;</li>
 			<li>But more powerfully (as we shall soon see), it is the last compositor of content delivered to the user. It is of course cloud-based. And, while it might not be geographically proximate to the user, it functions most powerfully when it functions as the user&apos;s proxy agent for organizing web content in the manner the user is best able to use.</li>
 		</ol>
 
-		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. Much of what we discuss in this document assumes a trusted (and trustable) relationship with and on behalf of the user. Though we recognize the trust relationship inherent in edge positioned technology is today more honored in the breach, we choose to explore the tremendous accessibility opportunities available when this trust relationship is rather honored in the observance.</p>
+		<p>Both of these are privileged positions providing access to much information about the user and how the user functions. While we note the need to preserve the web user&apos;s privacy here, the remainder of this document focusses on providing accessibility support and assumes privacy is preserved through mechanisms detailed in other W3C technologies.
 	</section>
 
 	     <section id="contentsource">
@@ -70,7 +70,7 @@
 
 		    Even bespoke web applications aren&apos;t always created by a single
 		    source. Few developers exclusively use their own code. They rely on
-		    libraries, components and frameworks to build their plugins.</p>
+		    libraries, components and frameworks to build their web content.</p>
 		    
 		    <p> Edge technologies may actually be best placed to help overcome the problem
 		    of substandard accessibility in composite content delivered to end users by identifying precisely the accessibility challenges that end users may experience and helping remediate them where it matters most&mdash;at the user
@@ -180,7 +180,7 @@ s own hardware and software may render it in ways the Content Provider never ima
 </section>
 
 <section id="contentmanage">
-	<h1>Content&mdash;The HTML Layer</h1>
+	<h1>Content&mdash;Usually HTML</h1>
 
 	<p>This layer of delivered content consists of words, graphics, and rich media objects. In the main it is created using  html, both static and dynamic.</p>
 
@@ -394,7 +394,7 @@ accessible edge technologies.
 </section>
 
 <section id="present">
-<h1>Presentation&mdash;The CSS Layer</h1>
+<h1>Presentation&mdash;Usually CSS</h1>
 
 <p>
 
@@ -886,7 +886,7 @@ accessible edge technologies.
 </section>
 
 <section id="interact">
-<h1>Functionality&mdash;The Javascript Layer</h1>
+<h1>Functionality&mdash;Usually Javascript</h1>
 
 <p>
 
@@ -1440,7 +1440,7 @@ Placeholder pending content
 	</section>
 	 
 	<section id="autoWCAG">
-	<h3>Automated Detection of WCAG Violations</h3>
+	<h3>Automated Detection and Remediation of WCAG Violations</h3>
 
 			<p>Algorithmic detection of violations of WCAG 2.x success criteria is considered here as a vector for providing the user a more conformant experience. 
 				There is, of course, the other application, where violation detection serves as a step in a source remediation process. We address the former here.</p>
