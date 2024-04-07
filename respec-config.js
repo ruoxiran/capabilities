@@ -57,7 +57,14 @@ var respecConfig = {
 				        companyURL: "https://userway.org/",
 				        mailto: "lionel@userway.org",
 				        w3cid: 106386
-			    }],
+			    }
+		{
+			name: "Jason Taylor",
+			company: "UsableNet",
+			companyURL: "http://usablenet.com/",
+			w3cid: 151178
+				                }
+	],
 
 	// errata: 'https://www.w3.org/2010/02/rdfa/errata.html',
 	
