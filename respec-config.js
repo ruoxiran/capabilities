@@ -58,7 +58,7 @@ var respecConfig = {
 				        mailto: "lionel@userway.org",
 				        w3cid: 106386
 			    }
-		{
+			    		{
 			name: "Jason Taylor",
 			company: "UsableNet",
 			companyURL: "http://usablenet.com/",
